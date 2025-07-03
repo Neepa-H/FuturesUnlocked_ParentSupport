@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="doc_title">Supporting Your Child's Next Steps: Post-16 Options After Year 11</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -52,8 +51,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Align content to top of card */
-            align-items: center;
-            text-align: center;
+            align-items: flex-start; /* ACCESSIBILITY: Align left for dyslexia */
+            text-align: left; /* ACCESSIBILITY: Align left for dyslexia */
         }
         .option-card:hover {
             transform: translateY(-5px);
@@ -65,10 +64,10 @@
             font-size: 0.8rem; /* Retain slightly smaller font for density */
             margin-top: 1rem;
             line-height: 1.45; /* Increased line height for readability */
-            color: #475569; /* Muted gray for detail text */
+            color: #334155; /* ACCESSIBILITY: Darkened for contrast */
             text-align: left; /* Align details left for readability */
             width: 100%; /* Ensure details take full width */
-            background-color: rgba(255,255,255,0.7); /* Slightly transparent background for readability over card bg */
+            background-color: #fff; /* ACCESSIBILITY: Opaque background for contrast */
             padding: 0.75rem; /* Add padding inside details box */
             border-radius: 0.75rem;
             border: 1px solid rgba(0,0,0,0.05);
@@ -266,9 +265,7 @@
         </select>
     </div>
 
-    <!-- Side 1 of the Infographic -->
     <div class="infographic-side">
-        <!-- Title and Intro Panel -->
         <div class="text-center mb-8">
             <h1 class="text-5xl md:text-6xl font-extrabold text-blue-800 mb-4 leading-tight tracking-tight">
                 <span class="text-indigo-600" id="main_title_part1">Your Future Unlocked:</span><br>
@@ -279,12 +276,10 @@
             </p>
         </div>
 
-        <!-- Visual Summary of Post-16 Pathways Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
 
-            <!-- A-levels Card -->
             <div class="option-card bg-sky-100 p-6 rounded-2xl shadow-lg border-b-4 border-sky-400 cursor-pointer">
-                <span class="text-6xl mb-4" role="img" aria-label="Graduation Cap Icon">🎓</span>
+                <span class="text-6xl mb-4" role="img" aria-label="Compass Icon">🧭</span>
                 <h2 class="text-2xl font-bold text-sky-800 mb-2" id="al_title">A-levels</h2>
                 <p class="text-gray-700 text-lg" id="al_description">Academic subjects, ideal for university routes.</p>
                 <div class="card-details">
@@ -301,7 +296,6 @@
                 <p id="al_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- BTECs Card -->
             <div class="option-card bg-emerald-100 p-6 rounded-2xl shadow-lg border-b-4 border-emerald-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Gear Icon">⚙️</span>
                 <h2 class="text-2xl font-bold text-emerald-800 mb-2" id="btec_title">BTECs</h2>
@@ -321,7 +315,6 @@
                 <p id="btec_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- T-Levels Card -->
             <div class="option-card bg-purple-100 p-6 rounded-2xl shadow-lg border-b-4 border-purple-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Building Icon">🏢</span>
                 <h2 class="text-2xl font-bold text-purple-800 mb-2" id="tlevel_title">T-Levels</h2>
@@ -340,7 +333,6 @@
                 <p id="tlevel_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- IB (International Baccalaureate) Card -->
             <div class="option-card bg-indigo-100 p-6 rounded-2xl shadow-lg border-b-4 border-indigo-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Globe Icon">🌍</span>
                 <h2 class="text-2xl font-bold text-indigo-800 mb-2" id="ib_title">IB (International Baccalaureate)</h2>
@@ -359,7 +351,6 @@
                 <p id="ib_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- Apprenticeships Card -->
             <div class="option-card bg-amber-100 p-6 rounded-2xl shadow-lg border-b-4 border-amber-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Wrench Icon">🛠️</span>
                 <h2 class="text-2xl font-bold text-amber-800 mb-2" id="app_title">Apprenticeships</h2>
@@ -378,7 +369,6 @@
                 <p id="app_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- Work with Training Card -->
             <div class="option-card bg-teal-100 p-6 rounded-2xl shadow-lg border-b-4 border-teal-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Briefcase with Person Icon">👨‍💼</span>
                 <h2 class="text-2xl font-bold text-teal-800 mb-2" id="wwt_title">Work with Training</h2>
@@ -398,15 +388,12 @@
             </div>
         </div>
 
-        <!-- Sidenote Box for Other Pathways -->
         <div class="bg-gray-100 border-l-4 border-gray-400 p-4 rounded-md text-sm text-gray-800 mt-6 w-full max-w-5xl mx-auto">
             <strong id="other_pathways_title"></strong>: <span id="other_pathways_content"></span>
         </div>
     </div>
 
-    <!-- Side 2 of the Infographic -->
     <div class="infographic-side">
-        <!-- Self-Reflection Section -->
         <div class="reflection-section bg-gray-100 p-8 rounded-2xl shadow-inner w-full max-w-5xl mb-8 border-t-4 border-gray-300">
             <p class="text-sm text-gray-500 italic mt-4">
                 💡 There’s no right answer — every family’s journey is different. Use these prompts to guide your thinking.
@@ -465,7 +452,6 @@
             </div>
         </div>
 
-        <!-- Compare and Decide Section -->
         <div class="reflection-section bg-gray-100 p-8 rounded-2xl shadow-inner w-full max-w-5xl mb-8 border-t-4 border-gray-300">
             <h3 class="text-3xl font-bold text-gray-700 mb-6 text-center" id="compare_decide_header">Talk It Through Together</h3>
 
@@ -483,7 +469,6 @@
             </div>
         </div>
 
-        <!-- Next Steps Section -->
         <div class="reflection-section bg-gray-100 p-8 rounded-2xl shadow-inner w-full max-w-5xl border-t-4 border-gray-300">
             <h3 class="text-3xl font-bold text-gray-700 mb-6 text-center" id="next_steps_header">What You Can Do Next</h3>
 
@@ -964,7 +949,7 @@
                 parent_next_step_prompt: "আমার পরবর্তী পদক্ষেপ...",
                 next_step_prompt_text: "💡 <strong>চিন্তাভাবনার প্রম্পট:</strong> শুরু করার জন্য، আপনি একটি ব্যবহারিক، সহজ পদক্ষেপ নিতে পারেন؟ সম্ভবত তাদের একটি নির্দিষ্ট কলেজ গবেষণা করতে সাহায্য করা، অথবা একটি কর্মজীবনের বিষয়ে আগ্রহী কারো সাথে কথোপকথনের ব্যবস্থা করা؟",
                 parent_questions_prompt: "স্কুল/কলেজ/নিয়োগকর্তাদের কাছে আমি কী প্রশ্ন জিজ্ঞাসা করতে চাই...",
-                parent_questions_prompt_text: "💡 <strong>চিন্তাভাবনার প্রম্পত:</strong> একজন অভিভাবক হিসেবে، این گزینه‌ها کے بارے میں آپ کے مالی، لاجسٹিক، یا طویل مدتی سوالات کیا ہیں؟ آپ کس طرح ان کے جوابات تلاش کر سکتے ہیں؟",
+                parent_questions_prompt_text: "💡 <strong>চিন্তাভাবনার প্রম্পত:</strong> একজন অভিভাবক হিসেবে، این گزینه‌ها کے بارے میں آپ کے مالی، لاجسٹک، یا طویل مدتی سوالات کیا ہیں؟ آپ کس طرح ان کے جوابات تلاش کر سکتے ہیں؟",
                 parent_who_to_talk_prompt: "আমরা কার সাথে সমর্থনের জন্য কথা বলতে পারি؟",
                 who_to_talk_prompt_text: "💡 <strong>চিন্তাভাবনার প্রম্পট:</strong> আপনার সন্তানের জীবন (বা আপনার নিজের নেটওয়ার্ক) এ কে মূল্যবান অন্তর্দৃষ্টি বা উত্সাহ দিতে পারে؟ ক্যারিয়ার উপদেষ্টা، শিক্ষক، পারিবারিক বন্ধু বা পরামর্শদাতাদের সম্পর্কে চিন্তা করুন。",
             },
@@ -1119,7 +1104,7 @@
                 btec_progression_label: "പുരോഗതി:", btec_progression_text: "സ്വീകരിക്കപ്പെടുന്നു <strong>സർവ്വകലാശാലകൾ</strong> (1-3 എ-ലെവൽ തുല്യം), അപ്രന്റീസ്ഷിപ്പുകൾ, അല്ലെങ്കിൽ തൊഴിൽ എന്നിവയാൽ അംഗീകരിക്കപ്പെടുന്നു.",
                 btec_stereotype_label: "പൊതുധാരണ:", btec_stereotype_text: "എ-ലെവലിനേക്കാൾ എളുപ്പം / യൂണിവേഴ്സിറ്റിക്ക് വേണ്ടിയല്ല.",
                 btec_reality_label: "യാഥാർത്ഥ്യം:", btec_reality_text: "കർക്കശമായതും, യഥാർത്ഥ ലോക നൈപുണ്യങ്ങൾ വികസിപ്പിക്കുന്നതും. തുടർച്ചയായ വിലയിരുത്തലിനും പ്രായോഗിക പ്രയോഗത്തിനും മികച്ചതാണ്.",
-                btec_reflection_prompt: "� ഈ വഴി എന്റെ കുട്ടിക്ക് അനുയോജ്യമാണോ എന്ന് നന്നായി മനസ്സിലാക്കാൻ സ്കൂൾ, കോളേജ് അല്ലെങ്കിൽ തൊഴിലുടമയോട് എന്ത് ചോദിക്കാൻ കഴിയും?",
+                btec_reflection_prompt: "  ഈ വഴി എന്റെ കുട്ടിക്ക് അനുയോജ്യമാണോ എന്ന് നന്നായി മനസ്സിലാക്കാൻ സ്കൂൾ, കോളേജ് അല്ലെങ്കിൽ തൊഴിലുടമയോട് എന്ത് ചോദിക്കാൻ കഴിയും?",
 
                 tlevel_what_label: "എന്താണ്:", tlevel_what_text: "പുതിയ 2 വർഷത്തെ സാങ്കേതിക പ്രോഗ്രാമുകൾ. 80% ക്ലാസ് റൂം, 20% വ്യവസായ പ്ലേസ്മെന്റ് (45+ ദിവസം).",
                 tlevel_entry_label: "പ്രവേശനം:", tlevel_entry_text: "സാധാരണയായി 4/C+ ഗ്രേഡിൽ 5 GCSE-കൾ, ഇംഗ്ലീഷും കണക്കും ഉൾപ്പെടെ.",
@@ -1475,4 +1460,3 @@
     </script>
 </body>
 </html>
-�
