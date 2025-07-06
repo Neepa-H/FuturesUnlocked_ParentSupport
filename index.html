@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,10 +69,27 @@
             text-align: left; /* Align details left for readability */
             width: 100%; /* Ensure details take full width */
             background-color: #ffffff; /* Solid white background for high contrast */
-            padding: 0.75rem; /* Add padding inside details box */
+            padding: 1rem;
             border-radius: 0.75rem;
             border: 1px solid rgba(0,0,0,0.05);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
+
+        .info-item-box {
+            background-color: #f7fafc; /* Very light grey */
+            border: 1px solid #e2e8f0; /* Light grey border */
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-item-box:last-child {
+            margin-bottom: 0;
+        }
+
         .card-details ul {
             list-style: none; /* Remove default bullet */
             padding-left: 0; /* Remove default padding */
@@ -344,15 +361,25 @@
                     <p class="text-gray-700 text-lg" id="al_description">Academic subjects, ideal for university routes.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="al_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="al_what_label">What:</strong> <span id="al_what_text">2-year academic deep dive into 3-4 subjects.</span></li>
-                        <li><span class="icon">✅</span> <strong id="al_entry_label">Entry:</strong> <span id="al_entry_text">5+ GCSEs @ 4/C (or higher in chosen subjects).</span></li>
-                        <li><span class="icon">✍️</span> <strong id="al_assessment_label">Assessment:</strong> <span id="al_assessment_text">Mostly <strong>final exams</strong> (some coursework).</span></li>
-                        <li><span class="icon">➡️</span> <strong id="al_progression_label">Progression:</strong> <span id="al_progression_text">Primary route to <strong>university</strong>, also Higher/Degree Apprenticeships.</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="al_stereotype_label">Stereotype:</strong> <span id="al_stereotype_text">"Only for uni" / "too academic".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="al_reality_label">Reality:</strong> <span id="al_reality_text">Develops analytical skills, opens many doors. Not the *only* uni path.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="al_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="al_what_label">What it is:</strong> <span id="al_what_text">A 2-year course studying 3-4 subjects you choose in depth. Focus is on academic theory and knowledge.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="al_entry_label">Entry:</strong> <span id="al_entry_text">Typically 5 or more GCSEs at grades 9-4 (A*-C), often with higher grade requirements (e.g., 6/B) in the chosen subjects.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="al_assessment_label">Assessment:</strong> <span id="al_assessment_text">Mainly by <strong>final exams</strong> at the end of the 2 years, with some subjects having a coursework component.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="al_progression_label">Progression:</strong> <span id="al_progression_text">The primary route to <strong>university</strong>. Also respected for Higher/Degree Apprenticeships and direct employment.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="al_stereotype_label">The Stereotype:</strong> <span id="al_stereotype_text">"They're the only 'proper' qualification" / "They're only for getting into university."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="al_reality_label">The Reality:</strong> <span id="al_reality_text">They build deep subject knowledge and strong analytical skills. While they are a key university route, many other pathways also lead to higher education and successful careers.</span></p>
+                    </div>
                 </div>
                 <p id="al_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
@@ -365,15 +392,25 @@
                     <p class="text-gray-700 text-lg" id="btec_description">Practical and coursework-based, focusing on vocational skills.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="btec_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="btec_what_label">What:</strong> <span id="btec_what_text">Applied learning in specific sectors (e.g., Health, Business, IT).</span></li>
-                        <li><span class="icon">✅</span> <strong id="btec_entry_label">Entry:</strong> <span id="btec_entry_text">Varies, typically 4-5 GCSEs @ 4/C.</span></li>
-                        <li><span class="icon">✍️</span> <strong id="btec_assessment_label">Assessment:</strong> <span id="btec_assessment_text">Mostly <strong>coursework</strong>, projects, and practicals.</span></li>
-                        <li><span class="icon">➡️</span> <strong id="btec_progression_label">Progression:</strong> <span id="btec_progression_text">University (accepted by 95%), apprenticeships, or work.</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="btec_stereotype_label">Stereotype:</strong> <span id="btec_stereotype_text">"Easier" / "not as good as A-levels".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="btec_reality_label">Reality:</strong> <span id="btec_reality_text">Develops practical skills valued by employers and unis.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="btec_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="btec_what_label">What it is:</strong> <span id="btec_what_text">Applied, practical learning in a specific sector like Health, Business, or IT, often with real-world case studies.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="btec_entry_label">Entry:</strong> <span id="btec_entry_text">Varies by course and level, but typically 4-5 GCSEs at grades 9-4 (A*-C).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="btec_assessment_label">Assessment:</strong> <span id="btec_assessment_text">Primarily through <strong>coursework</strong>, projects, and practical assignments. Fewer final exams than A-Levels.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="btec_progression_label">Progression:</strong> <span id="btec_progression_text">Excellent route to university (accepted by 95%), apprenticeships, or directly into employment.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="btec_stereotype_label">The Stereotype:</strong> <span id="btec_stereotype_text">"They're an easier option" / "Not as respected as A-Levels."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="btec_reality_label">The Reality:</strong> <span id="btec_reality_text">They are rigorous qualifications that develop practical, real-world skills highly valued by both employers and universities.</span></p>
+                    </div>
                 </div>
                 <p id="btec_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
@@ -386,15 +423,25 @@
                     <p class="text-gray-700 text-lg" id="tl_description">A mix of classroom learning and a long industry placement.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="tl_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="tl_what_label">What:</strong> <span id="tl_what_text">80% college, 20% (45+ days) on-the-job placement.</span></li>
-                        <li><span class="icon">✅</span> <strong id="tl_entry_label">Entry:</strong> <span id="tl_entry_text">Varies, often requires English/Maths GCSEs at 4.</span></li>
-                        <li><span class="icon">✍️</span> <strong id="tl_assessment_label">Assessment:</strong> <span id="tl_assessment_text">Exams, projects, and employer review.</span></li>
-                        <li><span class="icon">➡️</span> <strong id="tl_progression_label">Progression:</strong> <span id="tl_progression_text">Skilled work, Higher Apprenticeships, or university.</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="tl_stereotype_label">Stereotype:</strong> <span id="tl_stereotype_text">"Just for work" / "unproven".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="tl_reality_label">Reality:</strong> <span id="tl_reality_text">Equivalent to 3 A-levels, gives real work experience.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="tl_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="tl_what_label">What it is:</strong> <span id="tl_what_text">A blend of 80% classroom learning and 20% on-the-job experience, including a 45-day (minimum) industry placement.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="tl_entry_label">Entry:</strong> <span id="tl_entry_text">Varies, but generally requires 5 GCSEs including English and Maths at grade 4 or above.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="tl_assessment_label">Assessment:</strong> <span id="tl_assessment_text">A mix of exams, practical projects, and a review from the placement employer.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="tl_progression_label">Progression:</strong> <span id="tl_progression_text">Leads to skilled employment, Higher Apprenticeships, or university (UCAS points are awarded).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="tl_stereotype_label">The Stereotype:</strong> <span id="tl_stereotype_text">"They're just for trades" / "They're too new and unproven."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="tl_reality_label">The Reality:</strong> <span id="tl_reality_text">Equivalent to 3 A-Levels, they provide valuable, real-world experience and are co-designed with leading employers.</span></p>
+                    </div>
                 </div>
                 <p id="tl_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
@@ -407,15 +454,25 @@
                     <p class="text-gray-700 text-lg" id="ib_description">A broad, international curriculum with six subjects.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="ib_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="ib_what_label">What:</strong> <span id="ib_what_text">6 subjects across different areas, plus a core program.</span></li>
-                        <li><span class="icon">✅</span> <strong id="ib_entry_label">Entry:</strong> <span id="ib_entry_text">High requirements, often 5+ GCSEs at 6/B or above.</span></li>
-                        <li><span class="icon">✍️</span> <strong id="ib_assessment_label">Assessment:</strong> <span id="ib_assessment_text">Exams and extensive coursework.</span></li>
-                        <li><span class="icon">➡️</span> <strong id="ib_progression_label">Progression:</strong> <span id="ib_progression_text">Excellent for top UK and international universities.</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="ib_stereotype_label">Stereotype:</strong> <span id="ib_stereotype_text">"Only for geniuses" / "too much work".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="ib_reality_label">Reality:</strong> <span id="ib_reality_text">Challenging but develops excellent time management and breadth of knowledge.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="ib_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="ib_what_label">What it is:</strong> <span id="ib_what_text">A comprehensive 2-year programme studying 6 subjects (from languages to sciences), plus a core programme focusing on critical thinking and research.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="ib_entry_label">Entry:</strong> <span id="ib_entry_text">Demanding entry requirements, typically needing at least 5 GCSEs at grade 7-9 (A-A*).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="ib_assessment_label">Assessment:</strong> <span id="ib_assessment_text">A combination of final exams and extensive coursework, including a major independent research project (the Extended Essay).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="ib_progression_label">Progression:</strong> <span id="ib_progression_text">An excellent qualification for applying to top UK and international universities.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="ib_stereotype_label">The Stereotype:</strong> <span id="ib_stereotype_text">"It's only for geniuses" / "The workload is impossible."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="ib_reality_label">The Reality:</strong> <span id="ib_reality_text">It is academically challenging but develops exceptional time management, research skills, and a global perspective.</span></p>
+                    </div>
                 </div>
                 <p id="ib_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
@@ -428,17 +485,27 @@
                     <p class="text-gray-700 text-lg" id="app_description">Earn while you learn in a real job with training.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="app_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="app_what_label">What:</strong> <span id="app_what_text">A real job with structured training (20% off-the-job).</span></li>
-                        <li><span class="icon">✅</span> <strong id="app_entry_label">Entry:</strong> <span id="app_entry_text">Varies by level; some have no formal requirements.</span></li>
-                        <li><span class="icon">✍️</span> <strong id="app_assessment_label">Assessment:</strong> <span id="app_assessment_text">Practical tasks and knowledge tests.</span></li>
-                        <li><span class="icon">➡️</span> <strong id="app_progression_label">Progression:</strong> <span id="app_progression_text">Full-time job, higher level apprenticeships (up to degree level).</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="app_stereotype_label">Stereotype:</strong> <span id="app_stereotype_text">"Low pay" / "only for manual trades".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="app_reality_label">Reality:</strong> <span id="app_reality_text">Available in 1500+ job roles, from law to digital marketing. Pay increases with experience.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="app_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="app_what_label">What it is:</strong> <span id="app_what_text">A full-time job with structured training. At least 20% of the time is spent in 'off-the-job' training with a college or training provider.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="app_entry_label">Entry:</strong> <span id="app_entry_text">Varies hugely by level (Intermediate, Advanced, Higher, Degree). Some have no formal requirements, others require A-Levels or equivalent.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="app_assessment_label">Assessment:</strong> <span id="app_assessment_text">Continuous assessment of on-the-job skills and knowledge-based tests, culminating in an End-Point Assessment (EPA).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="app_progression_label">Progression:</strong> <span id="app_progression_text">A full-time role, promotion, or progression to a higher-level apprenticeship (up to degree and master's level).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="app_stereotype_label">The Stereotype:</strong> <span id="app_stereotype_text">"They're low-paid and just for manual trades."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="app_reality_label">The Reality:</strong> <span id="app_reality_text">Available in over 1,500 job roles, from law to digital marketing. Salaries increase with experience and level.</span></p>
+                    </div>
                 </div>
-                 <p id="app_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
+                <p id="app_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
             <!-- Work with Training Card -->
@@ -449,15 +516,25 @@
                     <p class="text-gray-700 text-lg" id="work_description">Entering the workforce with recognised training.</p>
                 </div>
                 <div class="card-details">
-                    <h4 class="font-bold text-gray-800 mb-2" id="work_key_info_header">Key Info & Realities:</h4>
-                    <ul>
-                        <li><span class="icon">💡</span> <strong id="work_what_label">What:</strong> <span id="work_what_text">A job that includes formal, accredited training courses.</span></li>
-                        <li><span class="icon">✅</span> <strong id="work_entry_label">Entry:</strong> <span id="work_entry_text">Depends on the job, often focused on attitude and potential.</span></li>
-                        <li><span class="icon">✍️</span> <strong id="work_assessment_label">Assessment:</strong> <span id="work_assessment_text">On-the-job performance and course completion.</span></li>
-                        <li><span class="icon">➡️</span> <strong id="work_progression_label">Progression:</strong> <span id="work_progression_text">Career advancement, further professional qualifications.</span></li>
-                        <li class="stereotype"><span class="icon">🚫</span> <strong id="work_stereotype_label">Stereotype:</strong> <span id="work_stereotype_text">"Dead-end job" / "no qualifications".</span></li>
-                        <li class="reality"><span class="icon">🌟</span> <strong id="work_reality_label">Reality:</strong> <span id="work_reality_text">Can be a fast track to a career, gaining experience and qualifications simultaneously.</span></li>
-                    </ul>
+                    <h4 class="font-bold text-lg mb-3" id="work_key_info_header">Key Info & Reality Check:</h4>
+                    <div class="info-item-box">
+                        <p><strong id="work_what_label">What it is:</strong> <span id="work_what_text">Starting a job straight from school that includes structured, employer-funded training, leading to recognised qualifications (e.g., NVQs).</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="work_entry_label">Entry:</strong> <span id="work_entry_text">Often depends more on attitude and potential than specific academic grades. A strong CV and interview are key.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="work_assessment_label">Assessment:</strong> <span id="work_assessment_text">A combination of on-the-job performance reviews and completing the requirements of the training course.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="work_progression_label">Progression:</strong> <span id="work_progression_text">Can lead to rapid career advancement, further professional qualifications, and sometimes higher-level apprenticeships.</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="work_stereotype_label">The Stereotype:</strong> <span id="work_stereotype_text">"It's a dead-end job with no real qualifications."</span></p>
+                    </div>
+                    <div class="info-item-box">
+                        <p><strong id="work_reality_label">The Reality:</strong> <span id="work_reality_text">A fantastic way to gain real-world experience and industry-recognised qualifications without student debt, providing a head start in a career.</span></p>
+                    </div>
                 </div>
                  <p id="work_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
@@ -654,7 +731,7 @@
                 step4_text: "Search for local apprenticeship vacancies.",
                 step5_text: "Encourage work experience or volunteering.",
                 other_pathways_title: "Other Pathways & Support",
-                other_pathways_text: "Some students choose pathways not shown on the main grid that can be just as valuable. For example, supported internships and supported apprenticeships offer structured help for young people with Education, Health and Care Plans (EHCPs) or additional needs. They involve on-the-job training and a strong focus on building independence and employability. Some students join the Armed Forces, where training, qualifications, and career development are combined with service. Entry-level work or sector-specific training programmes can also help young people build skills and progress to an apprenticeship or further education. Talk to your school, college, or local careers service to find out what's available and what would best support your child's goals."
+                other_pathways_text: "Some students choose pathways not shown on the main grid that can be just as valuable. Some students join the <strong>Armed Forces</strong>, where training, qualifications, and career development are combined with service. Entry-level work or sector-specific training programmes can also help young people build skills and progress to an apprenticeship or further education. For those who need additional support, pathways like <strong>supported internships</strong> and <strong>supported apprenticeships</strong> offer structured help for young people with Education, Health and Care Plans (EHCPs) or additional needs. These involve on-the-job training with a strong focus on building independence and employability. Talk to your school, college, or local careers service to find out what's available and what would best support your child's goals."
             },
             ar: {
                 doc_title: "دعم خطوات طفلك التالية: خيارات ما بعد المرحلة الثانوية بعد السنة 11",
