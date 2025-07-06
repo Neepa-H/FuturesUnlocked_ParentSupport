@@ -296,6 +296,16 @@
             font-size: 1.25rem;
         }
 
+        .site-footer {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid #e2e8f0; /* gray-200 */
+            color: #64748b; /* gray-500 */
+            font-size: 0.875rem;
+        }
+
         /* Print-specific adjustments to ensure optimal layout on A4 */
         @media print {
             @page {
@@ -717,6 +727,10 @@
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="copyright-year"></span> Post-16 Options Guide. All Rights Reserved.</p>
+    </footer>
 
     <script>
         const translations = {
@@ -1656,46 +1670,39 @@
                 step5_text: "Annog profiad gwaith neu wirfoddoli perthnasol.",
                 other_pathways_title: "Llwybrau a Chymorth Eraill",
                 other_pathways_text: "Mae llwybrau gwerthfawr eraill ar gael. Mae <strong>Interniaethau â Chymorth</strong> a <strong>Hyfforddeiaethau</strong> yn darparu cymorth wedi'i deilwra ar gyfer pobl ifanc ag anghenion dysgu ychwanegol neu Gynlluniau Addysg, Iechyd a Gofal (ADG), gan ganolbwyntio ar sgiliau gwaith a byw'n annibynnol. Mae rhai'n ymuno â'r <strong>lluoedd arfog</strong>, sy'n cynnig hyfforddiant, cymwysterau, a gyrfa strwythuredig. Gall rhaglenni hyfforddi sector-benodol neu waith lefel mynediad hefyd fod yn gamau cyntaf rhagorol. Cysylltwch â gwasanaeth gyrfaoedd eich ysgol neu goleg i archwilio'r holl opsiynau sydd ar gael i gefnogi uchelgeisiau eich plentyn."
-            }
-        };
+            };
 
-        const languageSelect = document.getElementById('languageSelect');
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageSelect = document.getElementById('languageSelect');
 
-        function changeLanguage() {
-            const lang = languageSelect.value;
-            localStorage.setItem('selectedLanguage', lang); // Save preference
-            const translation = translations[lang] || translations.en;
+            // Set copyright year
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
-            // Set document direction for RTL languages
-            if (lang === 'ar' || lang === 'ur') {
-                document.documentElement.setAttribute('dir', 'rtl');
-            } else {
-                document.documentElement.setAttribute('dir', 'ltr');
-            }
+            function changeLanguage() {
+                const lang = languageSelect.value;
+                localStorage.setItem('language', lang); // Save preference
+                const translation = translations[lang] || translations.en;
 
-            // Update document title
-            if (translation.doc_title) {
-                document.title = translation.doc_title;
-            }
-
-            // Iterate over translation keys and update elements
-            for (const key in translation) {
-                if (Object.hasOwnProperty.call(translation, key)) {
-                    if (key === 'doc_title') continue; // Already handled
-                    const element = document.getElementById(key);
+                // Update all text content based on the selected language
+                Object.keys(translation).forEach(id => {
+                    const element = document.getElementById(id);
                     if (element) {
-                        element.innerHTML = translation[key];
+                        // Use innerHTML for keys that are expected to contain HTML tags for formatting
+                        if (id.includes('_prompt') || id.includes('_text') || id.includes('_header') || id.includes('_reality')) {
+                            element.innerHTML = translation[id];
+                        } else {
+                            element.textContent = translation[id];
+                        }
                     }
-                }
+                });
             }
-        }
 
-        // Set initial language on page load and add event listener
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+            // Restore saved language
+            const savedLang = localStorage.getItem('language') || 'en';
             languageSelect.value = savedLang;
-            changeLanguage(); // Set initial language
-            
+            changeLanguage(); // Set initial language on page load
+
+            // Add event listener for language changes
             languageSelect.addEventListener('change', changeLanguage);
 
             // Automated test to cycle through languages and check for errors
@@ -1710,10 +1717,14 @@
             });
             console.log('--- Language Switch Test Complete ---');
 
-            // Restore saved language after test
+            // Restore the originally saved language after the test completes
             languageSelect.value = savedLang;
             changeLanguage();
         });
     </script>
+<footer class="text-center text-xs text-gray-500 mt-8">
+  © 2024 Futures Unlocked | Developed by Neepa H.
+</footer>
+
 </body>
 </html>
