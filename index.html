@@ -68,7 +68,7 @@
             color: #475569; /* Muted gray for detail text */
             text-align: left; /* Align details left for readability */
             width: 100%; /* Ensure details take full width */
-            background-color: rgba(255,255,255,0.7); /* Slightly transparent background for readability over card bg */
+            background-color: #ffffff; /* Solid white background for high contrast */
             padding: 0.75rem; /* Add padding inside details box */
             border-radius: 0.75rem;
             border: 1px solid rgba(0,0,0,0.05);
@@ -216,6 +216,27 @@
             cursor: pointer;
         }
 
+        /* Specific styles for the "Other Pathways" box for better readability */
+        #other_pathways_card {
+            background-color: #e0f2fe; /* A slightly richer, yet still light, blue */
+            border: 1px solid #90cdf4; /* Add a subtle border for definition */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+        }
+
+        #other_pathways_card .icon {
+            color: #2c5282; /* Darker blue for the icon for contrast */
+        }
+
+        #other_pathways_card h3 {
+            color: #1a202c; /* Ensure title is very dark for readability */
+        }
+
+        #other_pathways_card p {
+            font-size: 0.95rem; /* Slightly increase font size for body text */
+            line-height: 1.5; /* Increase line height for better spacing */
+            color: #2d3748; /* Darker text for better contrast */
+        }
+
         /* Print-specific adjustments to ensure optimal layout on A4 */
         @media print {
             body {
@@ -318,7 +339,7 @@
             <!-- A-levels Card -->
             <div class="option-card bg-sky-100 p-6 rounded-2xl shadow-lg border-b-4 border-sky-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Compass Icon">🧭</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-sky-800 mb-2" id="al_title">A-levels</h2>
                     <p class="text-gray-700 text-lg" id="al_description">Academic subjects, ideal for university routes.</p>
                 </div>
@@ -339,7 +360,7 @@
             <!-- BTECs Card -->
             <div class="option-card bg-emerald-100 p-6 rounded-2xl shadow-lg border-b-4 border-emerald-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Gear Icon">⚙️</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-emerald-800 mb-2" id="btec_title">BTECs</h2>
                     <p class="text-gray-700 text-lg" id="btec_description">Practical and coursework-based, focusing on vocational skills.</p>
                 </div>
@@ -360,7 +381,7 @@
             <!-- T-Levels Card -->
             <div class="option-card bg-amber-100 p-6 rounded-2xl shadow-lg border-b-4 border-amber-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Briefcase Icon">💼</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-amber-800 mb-2" id="tl_title">T-Levels</h2>
                     <p class="text-gray-700 text-lg" id="tl_description">A mix of classroom learning and a long industry placement.</p>
                 </div>
@@ -381,7 +402,7 @@
             <!-- IB Diploma Card -->
             <div class="option-card bg-rose-100 p-6 rounded-2xl shadow-lg border-b-4 border-rose-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Globe Icon">🌍</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-rose-800 mb-2" id="ib_title">IB Diploma</h2>
                     <p class="text-gray-700 text-lg" id="ib_description">A broad, international curriculum with six subjects.</p>
                 </div>
@@ -402,7 +423,7 @@
             <!-- Apprenticeships Card -->
             <div class="option-card bg-violet-100 p-6 rounded-2xl shadow-lg border-b-4 border-violet-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Wrench Icon">🔧</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-violet-800 mb-2" id="app_title">Apprenticeships</h2>
                     <p class="text-gray-700 text-lg" id="app_description">Earn while you learn in a real job with training.</p>
                 </div>
@@ -423,7 +444,7 @@
             <!-- Work with Training Card -->
             <div class="option-card bg-slate-100 p-6 rounded-2xl shadow-lg border-b-4 border-slate-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Lightbulb Icon">💡</span>
-                <div class="bg-white bg-opacity-70 p-4 rounded-lg">
+                <div class="bg-white p-4 rounded-lg">
                     <h2 class="text-2xl font-bold text-slate-800 mb-2" id="work_title">Work with Training</h2>
                     <p class="text-gray-700 text-lg" id="work_description">Entering the workforce with recognised training.</p>
                 </div>
