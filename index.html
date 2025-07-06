@@ -177,19 +177,7 @@
             border-top: 4px solid #cbd5e1;
         }
         .reflection-question {
-            margin-bottom: 2.5rem;
-        }
-
-        .fillable-line {
-            border-bottom: 1px solid #6b7280; /* gray-500 */
-            height: 3rem; /* Taller for more space */
-            margin-top: 0.75rem;
             margin-bottom: 1.5rem;
-            transition: border-color 0.3s;
-        }
-
-        .fillable-line:hover {
-            border-bottom-color: #d1d5db; /* gray-300 */
         }
         .reflection-options {
             display: flex;
@@ -267,69 +255,16 @@
             color: #2d3748; /* Darker text for better contrast */
         }
 
-        .print-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            padding: 0.75rem 1.5rem;
-            background-color: #2563eb; /* A nice blue */
-            color: white;
-            border: none;
-            border-radius: 9999px; /* pill shape */
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .print-button:hover {
-            background-color: #1d4ed8; /* Darker blue on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .print-button .icon {
-            font-size: 1.25rem;
-        }
-
-        .site-footer {
-            width: 100%;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-            border-top: 1px solid #e2e8f0; /* gray-200 */
-            color: #64748b; /* gray-500 */
-            font-size: 0.875rem;
-        }
-
         /* Print-specific adjustments to ensure optimal layout on A4 */
         @media print {
-            @page {
-                size: A4;
-                margin: 20mm;
-            }
-
             body {
                 padding: 0;
                 margin: 0;
                 min-height: auto;
                 justify-content: flex-start;
-                background-color: #fff !important; /* White background for printing */
-                color: #000 !important; /* Black text for printing */
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+                background-color: #fff; /* White background for printing */
+                color: #000; /* Black text for printing */
             }
-
-            /* Hide elements not for printing */
-            .language-selector, .print-button, .option-card:hover {
-                display: none !important;
-            }
-
-            /* Page layout */
             .infographic-side {
                 width: 100%;
                 min-height: auto;
@@ -337,31 +272,15 @@
                 box-shadow: none;
                 border-radius: 0;
                 border: none;
-                padding: 0; /* Remove padding to use @page margins */
-                page-break-after: always; /* Each side on a new page */
+                padding: 1.2rem;
             }
-
-            .infographic-side:last-child {
-                page-break-after: auto; /* No page break after the last side */
-            }
-
-            /* Prevent elements from breaking across pages */
-            .card,
-            .reflection-section,
-            #other_pathways_card {
-                page-break-inside: avoid;
-            }
-
-            /* Card styling for print */
-            .card, .reflection-section, #other_pathways_card {
+            .option-card, .reflection-section, #other_pathways_card {
                 background-color: transparent !important; /* Remove all card backgrounds */
                 border: 1px solid #ccc !important; /* Add simple border for definition */
                 box-shadow: none !important;
             }
             .bg-white.bg-opacity-70 { background-color: transparent !important; }
-
-            /* Typography for print */
-            h1, h2, h3, h4, p, li, strong, span, label {
+            h1, h2, h3, h4, p, li, strong, span {
                 color: #000 !important; /* Ensure all text is black */
                 font-size: 10pt !important; /* Standardize font size */
                 line-height: 1.2 !important;
@@ -371,21 +290,8 @@
             h3 { font-size: 16pt !important; }
             h4 { font-size: 12pt !important; }
             .text-6xl { font-size: 2.5rem !important; }
-
-            /* Grid layout for print */
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-
-            /* Form elements */
-            input, textarea {
-                border: 1px solid #000;
-            }
-            .fillable-line { 
-                border-bottom: 1px solid #999; 
-                background-color: transparent !important;
-            }
+            .language-selector, .option-card:hover { display: none; } /* Hide selector, disable hover effects */
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; } /* 2 columns for print */
         }
 
         /* Mobile-friendly adjustments */
@@ -418,11 +324,7 @@
         }
     </style>
 </head>
-<body>
-    <button id="print_button" onclick="window.print()" class="print-button">
-        <span class="icon" role="img" aria-label="Print Icon">🖨️</span> Print Guide
-    </button>
-    <div class="flex flex-col items-center justify-center min-h-screen">
+<body class="flex flex-col items-center justify-center min-h-screen">
 
     <div class="language-selector">
         <select id="languageSelect" onchange="changeLanguage()">
@@ -667,7 +569,6 @@
                     <div class="reflection-option"><input type="checkbox" id="chk_watching"><label for="chk_watching" id="label_learning_watching_parent"></label></div>
                     <div class="reflection-option"><input type="checkbox" id="chk_building"><label for="chk_building" id="label_learning_building_parent"></label></div>
                 </div>
-                <div class="fillable-line"></div>
             </div>
 
             <!-- Aspirations -->
@@ -680,7 +581,6 @@
                     <div class="reflection-option"><input type="checkbox" id="chk_exp"><label for="chk_exp" id="label_goal_real_experience_parent"></label></div>
                     <div class="reflection-option"><input type="checkbox" id="chk_explore"><label for="chk_explore" id="label_goal_try_different_parent"></label></div>
                 </div>
-                <div class="fillable-line"></div>
             </div>
 
             <div class="text-center my-10">
@@ -691,14 +591,12 @@
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="good_fit_question"></h4>
                 <p class="text-gray-300 mb-4" id="good_fit_prompt"></p>
-                <div class="fillable-line"></div>
             </div>
 
             <!-- Learn More -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="learn_more_question"></h4>
                 <p class="text-gray-300 mb-4" id="talk_through_learn_more_prompt"></p>
-                <div class="fillable-line"></div>
             </div>
 
             <div class="text-center my-10">
@@ -709,28 +607,21 @@
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_next_step_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="next_step_prompt_text"></p>
-                <div class="fillable-line"></div>
             </div>
 
             <!-- Parent Questions -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_questions_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="parent_questions_prompt_text"></p>
-                <div class="fillable-line"></div>
             </div>
 
             <!-- Who to Talk To -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_who_to_talk_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="who_to_talk_prompt_text"></p>
-                <div class="fillable-line"></div>
             </div>
         </div>
     </div>
-
-    <footer class="site-footer">
-        <p>&copy; <span id="copyright-year"></span> Post-16 Options Guide. All Rights Reserved.</p>
-    </footer>
 
     <script>
         const translations = {
@@ -1670,39 +1561,46 @@
                 step5_text: "Annog profiad gwaith neu wirfoddoli perthnasol.",
                 other_pathways_title: "Llwybrau a Chymorth Eraill",
                 other_pathways_text: "Mae llwybrau gwerthfawr eraill ar gael. Mae <strong>Interniaethau â Chymorth</strong> a <strong>Hyfforddeiaethau</strong> yn darparu cymorth wedi'i deilwra ar gyfer pobl ifanc ag anghenion dysgu ychwanegol neu Gynlluniau Addysg, Iechyd a Gofal (ADG), gan ganolbwyntio ar sgiliau gwaith a byw'n annibynnol. Mae rhai'n ymuno â'r <strong>lluoedd arfog</strong>, sy'n cynnig hyfforddiant, cymwysterau, a gyrfa strwythuredig. Gall rhaglenni hyfforddi sector-benodol neu waith lefel mynediad hefyd fod yn gamau cyntaf rhagorol. Cysylltwch â gwasanaeth gyrfaoedd eich ysgol neu goleg i archwilio'r holl opsiynau sydd ar gael i gefnogi uchelgeisiau eich plentyn."
-            };
+            }
+        };
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageSelect = document.getElementById('languageSelect');
+        const languageSelect = document.getElementById('languageSelect');
 
-            // Set copyright year
-            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        function changeLanguage() {
+            const lang = languageSelect.value;
+            localStorage.setItem('selectedLanguage', lang); // Save preference
+            const translation = translations[lang] || translations.en;
 
-            function changeLanguage() {
-                const lang = languageSelect.value;
-                localStorage.setItem('language', lang); // Save preference
-                const translation = translations[lang] || translations.en;
-
-                // Update all text content based on the selected language
-                Object.keys(translation).forEach(id => {
-                    const element = document.getElementById(id);
-                    if (element) {
-                        // Use innerHTML for keys that are expected to contain HTML tags for formatting
-                        if (id.includes('_prompt') || id.includes('_text') || id.includes('_header') || id.includes('_reality')) {
-                            element.innerHTML = translation[id];
-                        } else {
-                            element.textContent = translation[id];
-                        }
-                    }
-                });
+            // Set document direction for RTL languages
+            if (lang === 'ar' || lang === 'ur') {
+                document.documentElement.setAttribute('dir', 'rtl');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
             }
 
-            // Restore saved language
-            const savedLang = localStorage.getItem('language') || 'en';
-            languageSelect.value = savedLang;
-            changeLanguage(); // Set initial language on page load
+            // Update document title
+            if (translation.doc_title) {
+                document.title = translation.doc_title;
+            }
 
-            // Add event listener for language changes
+            // Iterate over translation keys and update elements
+            for (const key in translation) {
+                if (Object.hasOwnProperty.call(translation, key)) {
+                    if (key === 'doc_title') continue; // Already handled
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.innerHTML = translation[key];
+                    }
+                }
+            }
+        }
+
+        // Set initial language on page load and add event listener
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+            languageSelect.value = savedLang;
+            changeLanguage(); // Set initial language
+            
             languageSelect.addEventListener('change', changeLanguage);
 
             // Automated test to cycle through languages and check for errors
@@ -1717,14 +1615,10 @@
             });
             console.log('--- Language Switch Test Complete ---');
 
-            // Restore the originally saved language after the test completes
+            // Restore saved language after test
             languageSelect.value = savedLang;
             changeLanguage();
         });
     </script>
-<footer class="text-center text-xs text-gray-500 mt-8">
-  © 2024 Futures Unlocked | Developed by Neepa H.
-</footer>
-
 </body>
 </html>
