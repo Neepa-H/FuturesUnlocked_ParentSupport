@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -68,7 +68,9 @@
             color: #475569; /* Muted gray for detail text */
             text-align: left; /* Align details left for readability */
             width: 100%; /* Ensure details take full width */
-            background-color: #ffffff; /* Solid white background for high contrast */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            backdrop-filter: blur(8px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(8px); /* Safari support */
             padding: 1rem;
             border-radius: 0.75rem;
             border: 1px solid rgba(0,0,0,0.05);
@@ -79,11 +81,10 @@
         }
 
         .info-item-box {
-            background-color: #f7fafc; /* Very light grey */
-            border: 1px solid #e2e8f0; /* Light grey border */
             border-radius: 0.5rem;
             padding: 0.75rem;
             margin-bottom: 0.75rem;
+            border-width: 1px;
         }
 
         .info-item-box:last-child {
@@ -362,22 +363,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="al_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="al_what_label">What it is:</strong> <span id="al_what_text">A 2-year course studying 3-4 subjects you choose in depth. Focus is on academic theory and knowledge.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="al_entry_label">Entry:</strong> <span id="al_entry_text">Typically 5 or more GCSEs at grades 9-4 (A*-C), often with higher grade requirements (e.g., 6/B) in the chosen subjects.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="al_assessment_label">Assessment:</strong> <span id="al_assessment_text">Mainly by <strong>final exams</strong> at the end of the 2 years, with some subjects having a coursework component.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="al_progression_label">Progression:</strong> <span id="al_progression_text">The primary route to <strong>university</strong>. Also respected for Higher/Degree Apprenticeships and direct employment.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="al_stereotype_label">The Stereotype:</strong> <span id="al_stereotype_text">"They're the only 'proper' qualification" / "They're only for getting into university."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="al_reality_label">The Reality:</strong> <span id="al_reality_text">They build deep subject knowledge and strong analytical skills. While they are a key university route, many other pathways also lead to higher education and successful careers.</span></p>
                     </div>
                 </div>
@@ -393,22 +394,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="btec_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="btec_what_label">What it is:</strong> <span id="btec_what_text">Applied, practical learning in a specific sector like Health, Business, or IT, often with real-world case studies.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="btec_entry_label">Entry:</strong> <span id="btec_entry_text">Varies by course and level, but typically 4-5 GCSEs at grades 9-4 (A*-C).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="btec_assessment_label">Assessment:</strong> <span id="btec_assessment_text">Primarily through <strong>coursework</strong>, projects, and practical assignments. Fewer final exams than A-Levels.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="btec_progression_label">Progression:</strong> <span id="btec_progression_text">Excellent route to university (accepted by 95%), apprenticeships, or directly into employment.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="btec_stereotype_label">The Stereotype:</strong> <span id="btec_stereotype_text">"They're an easier option" / "Not as respected as A-Levels."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="btec_reality_label">The Reality:</strong> <span id="btec_reality_text">They are rigorous qualifications that develop practical, real-world skills highly valued by both employers and universities.</span></p>
                     </div>
                 </div>
@@ -424,22 +425,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="tl_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="tl_what_label">What it is:</strong> <span id="tl_what_text">A blend of 80% classroom learning and 20% on-the-job experience, including a 45-day (minimum) industry placement.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="tl_entry_label">Entry:</strong> <span id="tl_entry_text">Varies, but generally requires 5 GCSEs including English and Maths at grade 4 or above.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="tl_assessment_label">Assessment:</strong> <span id="tl_assessment_text">A mix of exams, practical projects, and a review from the placement employer.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="tl_progression_label">Progression:</strong> <span id="tl_progression_text">Leads to skilled employment, Higher Apprenticeships, or university (UCAS points are awarded).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="tl_stereotype_label">The Stereotype:</strong> <span id="tl_stereotype_text">"They're just for trades" / "They're too new and unproven."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="tl_reality_label">The Reality:</strong> <span id="tl_reality_text">Equivalent to 3 A-Levels, they provide valuable, real-world experience and are co-designed with leading employers.</span></p>
                     </div>
                 </div>
@@ -455,22 +456,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="ib_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="ib_what_label">What it is:</strong> <span id="ib_what_text">A comprehensive 2-year programme studying 6 subjects (from languages to sciences), plus a core programme focusing on critical thinking and research.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="ib_entry_label">Entry:</strong> <span id="ib_entry_text">Demanding entry requirements, typically needing at least 5 GCSEs at grade 7-9 (A-A*).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="ib_assessment_label">Assessment:</strong> <span id="ib_assessment_text">A combination of final exams and extensive coursework, including a major independent research project (the Extended Essay).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="ib_progression_label">Progression:</strong> <span id="ib_progression_text">An excellent qualification for applying to top UK and international universities.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="ib_stereotype_label">The Stereotype:</strong> <span id="ib_stereotype_text">"It's only for geniuses" / "The workload is impossible."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="ib_reality_label">The Reality:</strong> <span id="ib_reality_text">It is academically challenging but develops exceptional time management, research skills, and a global perspective.</span></p>
                     </div>
                 </div>
@@ -486,22 +487,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="app_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="app_what_label">What it is:</strong> <span id="app_what_text">A full-time job with structured training. At least 20% of the time is spent in 'off-the-job' training with a college or training provider.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="app_entry_label">Entry:</strong> <span id="app_entry_text">Varies hugely by level (Intermediate, Advanced, Higher, Degree). Some have no formal requirements, others require A-Levels or equivalent.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="app_assessment_label">Assessment:</strong> <span id="app_assessment_text">Continuous assessment of on-the-job skills and knowledge-based tests, culminating in an End-Point Assessment (EPA).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="app_progression_label">Progression:</strong> <span id="app_progression_text">A full-time role, promotion, or progression to a higher-level apprenticeship (up to degree and master's level).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="app_stereotype_label">The Stereotype:</strong> <span id="app_stereotype_text">"They're low-paid and just for manual trades."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="app_reality_label">The Reality:</strong> <span id="app_reality_text">Available in over 1,500 job roles, from law to digital marketing. Salaries increase with experience and level.</span></p>
                     </div>
                 </div>
@@ -517,22 +518,22 @@
                 </div>
                 <div class="card-details">
                     <h4 class="font-bold text-lg mb-3" id="work_key_info_header">Key Info & Reality Check:</h4>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-blue-50 border-blue-200">
                         <p><strong id="work_what_label">What it is:</strong> <span id="work_what_text">Starting a job straight from school that includes structured, employer-funded training, leading to recognised qualifications (e.g., NVQs).</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-yellow-50 border-yellow-200">
                         <p><strong id="work_entry_label">Entry:</strong> <span id="work_entry_text">Often depends more on attitude and potential than specific academic grades. A strong CV and interview are key.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-green-50 border-green-200">
                         <p><strong id="work_assessment_label">Assessment:</strong> <span id="work_assessment_text">A combination of on-the-job performance reviews and completing the requirements of the training course.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-indigo-50 border-indigo-200">
                         <p><strong id="work_progression_label">Progression:</strong> <span id="work_progression_text">Can lead to rapid career advancement, further professional qualifications, and sometimes higher-level apprenticeships.</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-red-50 border-red-200">
                         <p><strong id="work_stereotype_label">The Stereotype:</strong> <span id="work_stereotype_text">"It's a dead-end job with no real qualifications."</span></p>
                     </div>
-                    <div class="info-item-box">
+                    <div class="info-item-box bg-teal-50 border-teal-200">
                         <p><strong id="work_reality_label">The Reality:</strong> <span id="work_reality_text">A fantastic way to gain real-world experience and industry-recognised qualifications without student debt, providing a head start in a career.</span></p>
                     </div>
                 </div>
@@ -543,6 +544,16 @@
 
     <!-- Side 2 of the Infographic -->
     <div class="infographic-side">
+
+        <!-- Other Pathways & Support Section -->
+        <div id="other_pathways_card" class="w-full max-w-5xl mb-8 p-8 rounded-2xl bg-blue-50 border border-blue-200">
+            <div class="text-center">
+                <span class="icon text-5xl mb-4" role="img" aria-label="Magnifying Glass Icon">🔍</span>
+                <h3 class="text-3xl font-extrabold text-blue-800 mb-3" id="other_pathways_title">Other Pathways & Support</h3>
+                <p class="text-lg text-gray-700" id="other_pathways_text">Some students choose routes that are not shown in the main grid but can be equally valuable. For example, supported internships and supported apprenticeships offer structured help for young people with Education, Health and Care Plans (EHCPs) or additional needs. These include job coaching and a strong focus on building independence and employability. Some students join the Armed Forces, where training, qualifications and career development are combined with service. Entry-level work or sector-based training programmes may also help young people build skills and move into apprenticeships or further study. Speak to your school, college or local careers service to find out what is available and what would best support your child’s goals.</p>
+            </div>
+        </div>
+
         <!-- Self-Reflection and Action Planning Section -->
         <div class="w-full max-w-5xl reflection-section bg-gray-800 text-white p-8 rounded-2xl">
             
@@ -593,15 +604,6 @@
                     <li class="flex items-center"><input type="checkbox" class="mr-3 h-5 w-5"><span id="step4_text">Look for local apprenticeship vacancies.</span></li>
                     <li class="flex items-center"><input type="checkbox" class="mr-3 h-5 w-5"><span id="step5_text">Encourage work experience or volunteering.</span></li>
                 </ul>
-            </div>
-        </div>
-
-        <!-- Other Pathways & Support Section -->
-        <div id="other_pathways_card" class="w-full max-w-5xl mt-8 p-8 rounded-2xl bg-blue-50 border border-blue-200">
-            <div class="text-center">
-                <span class="icon text-5xl mb-4" role="img" aria-label="Magnifying Glass Icon">🔍</span>
-                <h3 class="text-3xl font-extrabold text-blue-800 mb-3" id="other_pathways_title">Other Pathways</h3>
-                <p class="text-lg text-gray-700" id="other_pathways_text">Some students choose routes that are not shown in the main grid but can be equally valuable. For example, supported internships and supported apprenticeships offer structured help for young people with Education, Health and Care Plans (EHCPs) or additional needs. These include job coaching and a strong focus on building independence and employability. Some students join the Armed Forces, where training, qualifications and career development are combined with service. Entry-level work or sector-based training programmes may also help young people build skills and move into apprenticeships or further study. Speak to your school, college or local careers service to find out what is available and what would best support your child’s goals.</p>
             </div>
         </div>
     </div>
@@ -1415,128 +1417,128 @@
             },
             cy: {
                 doc_title: "Cefnogi Camau Nesaf Eich Plentyn: Opsiynau Ôl-16 ar ôl Blwyddyn 11",
-                main_title_part1: "Eich Dyfodol wedi'i Ddatgloi:",
+                main_title_part1: "Datgloi Eich Dyfodol:",
                 main_title_part2: "Llywio Llwybrau Ôl-16",
-                intro_text: "Gall helpu'ch plentyn i benderfynu ar ei lwybr ar ôl Blwyddyn 11 fod yn gam mawr. Mae'r canllaw hwn yn esbonio'r prif opsiynau a sut y gallwch gefnogi eu dewisiadau.",
-                al_title: "Lefelau A",
-                al_description: "Pynciau academaidd, yn ddelfrydol ar gyfer llwybrau prifysgol.",
-                al_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                al_what_label: "Beth:",
-                al_what_text: "Plymio'n academaidd am 2 flynedd i 3-4 pwnc.",
-                al_entry_label: "Mynediad:",
-                al_entry_text: "5+ TGAU @ 4/C (neu'n uwch yn y pynciau a ddewiswyd).",
+                intro_text: "Gall helpu'ch plentyn i benderfynu ar ei lwybr ar ôl Blwyddyn 11 fod yn gam mawr. Mae'r canllaw hwn yn esbonio'r prif opsiynau a sut y gallwch gefnogi ei ddewisiadau.",
+                al_title: "Lefelau Safon Uwch (Lefelau A)",
+                al_description: "Cymwysterau academaidd traddodiadol, sy'n cael eu gwerthfawrogi'n fawr ar gyfer mynediad i'r brifysgol.",
+                al_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                al_what_label: "Beth ydyw:",
+                al_what_text: "Cwrs 2 flynedd yn astudio 3-4 pwnc o'ch dewis yn fanwl. Mae'r ffocws ar ddamcaniaeth a gwybodaeth academaidd.",
+                al_entry_label: "Gofynion Mynediad:",
+                al_entry_text: "Fel arfer, 5 TGAU neu fwy ar raddau 9-4 (A*-C), yn aml gyda gofynion gradd uwch (e.e., 6/B) yn y pynciau a ddewiswyd.",
                 al_assessment_label: "Asesu:",
-                al_assessment_text: "<strong>Arholiadau terfynol</strong> yn bennaf (rhywfaint o waith cwrs).",
+                al_assessment_text: "Yn bennaf drwy <strong>arholiadau terfynol</strong> ar ddiwedd y 2 flynedd, gyda rhai pynciau'n cynnwys elfen o waith cwrs.",
                 al_progression_label: "Dilyniant:",
-                al_progression_text: "Prif lwybr i'r <strong>brifysgol</strong>, hefyd Prentisiaethau Uwch/Gradd.",
-                al_stereotype_label: "Steroteip:",
-                al_stereotype_text: "\"Dim ond ar gyfer y brifysgol\" / \"rhy academaidd\".",
-                al_reality_label: "Realiti:",
-                al_reality_text: "Yn datblygu sgiliau dadansoddol, yn agor llawer o ddrysau. Nid dyma'r *unig* lwybr i'r brifysgol.",
-                al_reflection_prompt: "A allai fy mhlentyn fwynhau astudio pynciau penodol yn fanwl?",
-                btec_title: "BTECs",
-                btec_description: "Ymarferol ac yn seiliedig ar waith cwrs, gan ganolbwyntio ar sgiliau galwedigaethol.",
-                btec_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                btec_what_label: "Beth:",
-                btec_what_text: "Dysgu cymhwysol mewn sectorau penodol (e.e., Iechyd, Busnes, TG).",
-                btec_entry_label: "Mynediad:",
-                btec_entry_text: "Yn amrywio, fel arfer 4-5 TGAU @ 4/C.",
+                al_progression_text: "Y prif lwybr i'r <strong>brifysgol</strong>. Hefyd yn cael ei barchu ar gyfer Prentisiaethau Uwch/Gradd a chyflogaeth uniongyrchol.",
+                al_stereotype_label: "Y Stereoteip:",
+                al_stereotype_text: "\"Dyma'r unig gymhwyster 'go iawn'\" / \"Dim ond ar gyfer mynd i'r brifysgol y mae'n dda.\"",
+                al_reality_label: "Y Gwirionedd:",
+                al_reality_text: "Mae'n meithrin sgiliau dadansoddol hanfodol ac yn agor llawer o ddrysau. Nid dyma'r *unig* lwybr i'r brifysgol.",
+                al_reflection_prompt: "A fyddai fy mhlentyn yn mwynhau'r her o astudio pynciau penodol yn fanwl?",
+                btec_title: "BTEC",
+                btec_description: "Cymwysterau galwedigaethol sy'n canolbwyntio ar sgiliau ymarferol a gwaith cwrs.",
+                btec_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                btec_what_label: "Beth ydyw:",
+                btec_what_text: "Dysgu cymhwysol wedi'i anelu at sector diwydiant penodol, e.e., Busnes, Iechyd a Gofal Cymdeithasol, neu TG.",
+                btec_entry_label: "Gofynion Mynediad:",
+                btec_entry_text: "Yn amrywio, ond fel arfer mae angen 4-5 TGAU ar raddau 9-4 (A*-C), gan gynnwys Saesneg a Mathemateg yn aml.",
                 btec_assessment_label: "Asesu:",
-                btec_assessment_text: "<strong>Gwaith cwrs</strong>, prosiectau, ac ymarferol yn bennaf.",
+                btec_assessment_text: "Yn bennaf drwy <strong>waith cwrs parhaus</strong>, aseiniadau ymarferol, a phrosiectau. Mae gan rai arholiadau allanol.",
                 btec_progression_label: "Dilyniant:",
-                btec_progression_text: "Prifysgol (derbynnir gan 95%), prentisiaethau, neu waith.",
-                btec_stereotype_label: "Steroteip:",
-                btec_stereotype_text: "\"Haws\" / \"ddim cystal â Lefelau A\".",
-                btec_reality_label: "Realiti:",
-                btec_reality_text: "Yn datblygu sgiliau ymarferol a werthfawrogir gan gyflogwyr a phrifysgolion.",
-                btec_reflection_prompt: "A yw'n well gan fy mhlentyn waith prosiect na arholiadau?",
+                btec_progression_text: "Llwybr rhagorol i'r <strong>brifysgol</strong> (mae dros 95% yn eu derbyn), Prentisiaethau Uwch, neu gyflogaeth uniongyrchol.",
+                btec_stereotype_label: "Y Stereoteip:",
+                btec_stereotype_text: "\"Mae'n opsiwn 'haws'\" / \"Ddim cystal â Lefelau A.\"",
+                btec_reality_label: "Y Gwirionedd:",
+                btec_reality_text: "Cymhwyster a barchir yn fawr sy'n datblygu sgiliau ymarferol y mae cyflogwyr a phrifysgolion yn eu gwerthfawrogi.",
+                btec_reflection_prompt: "A yw'n well gan fy mhlentyn ddysgu drwy wneud a gweithio ar brosiectau yn hytrach nag arholiadau?",
                 tl_title: "Lefelau T",
-                tl_description: "Cymysgedd o ddysgu yn yr ystafell ddosbarth a lleoliad diwydiant hir.",
-                tl_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                tl_what_label: "Beth:",
-                tl_what_text: "80% coleg, 20% (45+ diwrnod) ar leoliad gwaith.",
-                tl_entry_label: "Mynediad:",
-                tl_entry_text: "Yn amrywio, yn aml mae angen TGAU Saesneg/Mathemateg ar 4.",
+                tl_description: "Cymhwyster newydd sy'n cyfuno astudio yn y dosbarth â lleoliad gwaith sylweddol.",
+                tl_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                tl_what_label: "Beth ydyw:",
+                tl_what_text: "Cwrs 2 flynedd sy'n cyfateb i 3 Lefel A. Mae tua 80% yn y coleg ac 20% (o leiaf 45 diwrnod) mewn lleoliad diwydiant perthnasol.",
+                tl_entry_label: "Gofynion Mynediad:",
+                tl_entry_text: "Fel arfer 5 TGAU ar raddau 9-4, gan gynnwys Saesneg a Mathemateg yn aml. Gall rhai gofyn am radd uwch mewn pynciau perthnasol.",
                 tl_assessment_label: "Asesu:",
-                tl_assessment_text: "Arholiadau, prosiectau, ac adolygiad cyflogwr.",
+                tl_assessment_text: "Cymysgedd o arholiadau, gwaith cwrs, a gwerthusiad gan y cyflogwr o'r lleoliad diwydiant.",
                 tl_progression_label: "Dilyniant:",
-                tl_progression_text: "Gwaith medrus, Prentisiaethau Uwch, neu brifysgol.",
-                tl_stereotype_label: "Steroteip:",
-                tl_stereotype_text: "\"Dim ond ar gyfer gwaith\" / \"heb ei brofi\".",
-                tl_reality_label: "Realiti:",
-                tl_reality_text: "Yn cyfateb i 3 Lefel A, yn rhoi profiad gwaith go iawn.",
-                tl_reflection_prompt: "A fyddai cyfuniad o'r ystafell ddosbarth a gwaith go iawn yn addas i'm plentyn?",
-                ib_title: "Diploma IB",
-                ib_description: "Cwricwlwm rhyngwladol eang gyda chwe phwnc.",
-                ib_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                ib_what_label: "Beth:",
-                ib_what_text: "6 phwnc ar draws gwahanol feysydd, a rhaglen graidd.",
-                ib_entry_label: "Mynediad:",
-                ib_entry_text: "Gofynion uchel, yn aml 5+ TGAU ar 6/B neu'n uwch.",
+                tl_progression_text: "Yn ddelfrydol ar gyfer symud ymlaen i <strong>waith medrus</strong>, Prentisiaeth Uwch/Gradd, neu astudiaethau prifysgol.",
+                tl_stereotype_label: "Y Stereoteip:",
+                tl_stereotype_text: "\"Dim ond ar gyfer prentisiaethau y mae'n dda\" / \"Cymhwyster newydd heb ei brofi.\"",
+                tl_reality_label: "Y Gwirionedd:",
+                tl_reality_text: "Wedi'i ddatblygu gyda chyflogwyr i ddarparu'r sgiliau sydd eu hangen ar ddiwydiant. Mae'n cynnig profiad gwaith go iawn gwerthfawr.",
+                tl_reflection_prompt: "A fyddai'r cyfuniad o ddysgu yn y dosbarth a phrofiad gwaith go iawn yn gweddu i'm plentyn?",
+                ib_title: "Y Fagloriaeth Ryngwladol (IB)",
+                ib_description: "Rhaglen eang, heriol a gydnabyddir yn rhyngwladol.",
+                ib_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                ib_what_label: "Beth ydyw:",
+                ib_what_text: "Astudir chwe phwnc (rhai ar lefel uwch, rhai ar lefel safonol) ar draws ystod o ddisgyblaethau, ynghyd â 'rhaglen graidd'.",
+                ib_entry_label: "Gofynion Mynediad:",
+                ib_entry_text: "Fel arfer, gofynion TGAU uchel iawn, yn aml 5 neu fwy o raddau 9-6 (A*-B), gan gynnwys Saesneg a Mathemateg.",
                 ib_assessment_label: "Asesu:",
-                ib_assessment_text: "Arholiadau a gwaith cwrs helaeth.",
+                ib_assessment_text: "Cymysgedd o arholiadau terfynol a gwaith cwrs sylweddol, gan gynnwys traethawd estynedig.",
                 ib_progression_label: "Dilyniant:",
-                ib_progression_text: "Ardderchog ar gyfer prifysgolion gorau'r DU a rhyngwladol.",
-                ib_stereotype_label: "Steroteip:",
-                ib_stereotype_text: "\"Dim ond i athrylithwyr\" / \"gormod o waith\".",
-                ib_reality_label: "Realiti:",
-                ib_reality_text: "Heriaiol ond yn datblygu sgiliau rheoli amser a lledred gwybodaeth rhagorol.",
-                ib_reflection_prompt: "Ydy fy mhlentyn yn unigolyn cyflawn sy'n mwynhau her?",
+                ib_progression_text: "Llwybr a barchir yn fawr i <strong>brifysgolion gorau'r DU a ledled y byd</strong>.",
+                ib_stereotype_label: "Y Stereoteip:",
+                ib_stereotype_text: "\"Dim ond ar gyfer y rhai mwyaf galluog\" / \"Mae'n ormod o waith.\"",
+                ib_reality_label: "Y Gwirionedd:",
+                ib_reality_text: "Mae'n heriol, ond mae'n datblygu sgiliau rheoli amser, ymchwil annibynnol, ac ehangder gwybodaeth rhagorol.",
+                ib_reflection_prompt: "A yw fy mhlentyn yn unigolyn cyflawn sy'n ffynnu ar her academaidd eang?",
                 app_title: "Prentisiaethau",
-                app_description: "Ennill cyflog wrth ddysgu mewn swydd go iawn gyda hyfforddiant.",
-                app_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                app_what_label: "Beth:",
-                app_what_text: "Swydd go iawn gyda hyfforddiant strwythuredig (20% i ffwrdd o'r swydd).",
-                app_entry_label: "Mynediad:",
-                app_entry_text: "Yn amrywio yn ôl lefel; nid oes gan rai ofynion ffurfiol.",
+                app_description: "Ennill cyflog, cael profiad gwaith, a chael cymhwyster ar yr un pryd.",
+                app_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                app_what_label: "Beth ydyw:",
+                app_what_text: "Swydd go iawn gyda hyfforddiant strwythuredig. Mae o leiaf 20% o'r amser yn cael ei dreulio ar ddysgu y tu allan i'r gweithle, yn aml mewn coleg.",
+                app_entry_label: "Gofynion Mynediad:",
+                app_entry_text: "Yn amrywio'n fawr yn ôl y lefel (Canolradd, Uwch, Uwch, Gradd). Gall rhai fod angen TGAU penodol, tra bod eraill yn canolbwyntio ar botensial.",
                 app_assessment_label: "Asesu:",
-                app_assessment_text: "Tasgau ymarferol a phrofion gwybodaeth.",
+                app_assessment_text: "Asesiad parhaus yn y gweithle, tystiolaeth portffolio, a phrawf ymarferol terfynol (Asesiad Pwynt Terfyn).",
                 app_progression_label: "Dilyniant:",
-                app_progression_text: "Swydd amser llawn, prentisiaethau lefel uwch (hyd at lefel gradd).",
-                app_stereotype_label: "Steroteip:",
-                app_stereotype_text: "\"Cyflog isel\" / \"dim ond ar gyfer crefftau llaw\".",
-                app_reality_label: "Realiti:",
-                app_reality_text: "Ar gael mewn 1500+ o rolau swydd, o'r gyfraith i farchnata digidol. Mae'r cyflog yn cynyddu gyda phrofiad.",
-                app_reflection_prompt: "A yw fy mhlentyn yn awyddus i ddechrau gweithio ac ennill arian?",
+                app_progression_text: "Gyrfa amser llawn, dyrchafiad, neu symud ymlaen i <strong>brentisiaeth lefel uwch</strong> (hyd at lefel gradd a Meistr).",
+                app_stereotype_label: "Y Stereoteip:",
+                app_stereotype_text: "\"Cyflog isel\" / \"Dim ond ar gyfer crefftau llaw y mae'n dda.\"",
+                app_reality_label: "Y Gwirionedd:",
+                app_reality_text: "Ar gael mewn dros 1500 o rolau, o'r gyfraith a pheirianneg i farchnata digidol. Mae cyflogau'n cynyddu'n sylweddol gyda phrofiad a lefel.",
+                app_reflection_prompt: "A yw fy mhlentyn yn awyddus i ddechrau gweithio, ennill arian, a dysgu mewn ffordd ymarferol?",
                 work_title: "Gwaith gyda Hyfforddiant",
-                work_description: "Ymuno â'r gweithlu gyda hyfforddiant cydnabyddedig.",
-                work_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                work_what_label: "Beth:",
-                work_what_text: "Swydd sy'n cynnwys cyrsiau hyfforddi ffurfiol, achrededig.",
-                work_entry_label: "Mynediad:",
-                work_entry_text: "Yn dibynnu ar y swydd, yn aml yn canolbwyntio ar agwedd a photensial.",
+                work_description: "Dechrau gyrfa gyda chymwysterau a gydnabyddir gan y diwydiant.",
+                work_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                work_what_label: "Beth ydyw:",
+                work_what_text: "Swydd lefel mynediad sy'n cynnwys rhaglen hyfforddi ffurfiol, strwythuredig i ddatblygu sgiliau penodol ar gyfer y swydd.",
+                work_entry_label: "Gofynion Mynediad:",
+                work_entry_text: "Yn dibynnu'n llwyr ar y cyflogwr a'r rôl. Yn aml, mae brwdfrydedd ac agwedd 'gallu gwneud' yr un mor bwysig â chymwysterau.",
                 work_assessment_label: "Asesu:",
-                work_assessment_text: "Perfformiad yn y swydd a chwblhau'r cwrs.",
+                work_assessment_text: "Yn seiliedig ar berfformiad yn y gweithle, cwblhau'r hyfforddiant, ac o bosibl ennill cymwysterau proffesiynol.",
                 work_progression_label: "Dilyniant:",
-                work_progression_text: "Datblygiad gyrfa, cymwysterau proffesiynol pellach.",
-                work_stereotype_label: "Steroteip:",
-                work_stereotype_text: "\"Swydd heb ddyfodol\" / \"dim cymwysterau\".",
-                work_reality_label: "Realiti:",
-                work_reality_text: "Gall fod yn llwybr cyflym i yrfa, gan ennill profiad a chymwysterau ar yr un pryd.",
-                work_reflection_prompt: "A oes gan fy mhlentyn lwybr gyrfa clir mewn golwg?",
+                work_progression_text: "Dilyniant o fewn y cwmni, symud ymlaen i rolau mwy arbenigol, neu ddefnyddio'r profiad i wneud cais am brentisiaeth uwch.",
+                work_stereotype_label: "Y Stereoteip:",
+                work_stereotype_text: "\"Swydd heb ddyfodol\" / \"Dim ond gwaith heb sgiliau ydyw.\"",
+                work_reality_label: "Y Gwirionedd:",
+                work_reality_text: "Gall fod yn gam cyntaf rhagorol ar ysgol gyrfa, gan ddarparu profiad a hyfforddiant gwerthfawr heb y pwysau academaidd.",
+                work_reflection_prompt: "A oes gan fy mhlentyn lwybr gyrfa clir mewn golwg ac a fyddai'n elwa o brofiad uniongyrchol?",
                 reflection_title: "Amser i Fyfyrio a Chynllunio",
-                reflection_subtitle: "Defnyddiwch y cwestiynau hyn i gael sgwrs ystyrlon gyda'ch plentyn.",
-                q1_title: "1. Beth yw cryfderau a nwydau fy mhlentyn?",
+                reflection_subtitle: "Defnyddiwch y cwestiynau hyn i sbarduno sgyrsiau ystyrlon gyda'ch plentyn.",
+                q1_title: "1. Beth yw cryfderau a diddordebau fy mhlentyn?",
                 q1_op1_label: "Academaidd a Dadansoddol",
                 q1_op2_label: "Creadigol ac Ymarferol",
                 q1_op3_label: "Ymarferol a Datrys Problemau",
                 q1_op4_label: "Cymdeithasol a Chyfathrebol",
-                q1_notes_label: "Nodiadau ar eu hoff bynciau neu hobïau:",
+                q1_notes_label: "Nodiadau ar eu hoff bynciau ysgol neu hobïau y tu allan i'r ysgol:",
                 q2_title: "2. Sut mae fy mhlentyn yn dysgu orau?",
-                q2_op1_label: "Mewn ystafell ddosbarth, trwy theori",
-                q2_op2_label: "Trwy wneud a chymhwyso'n ymarferol",
-                q2_op3_label: "Mewn amgylchedd gwaith",
-                q2_op4_label: "Cymysgedd o theori ac ymarfer",
-                q3_title: "3. Beth yw eu dyheadau hirdymor?",
-                q3_notes_label: "(Mae'n iawn os nad ydyn nhw'n gwybod eto! Archwiliwch syniadau.)",
+                q2_op1_label: "Mewn ystafell ddosbarth, drwy theori a thrafodaeth",
+                q2_op2_label: "Drwy wneud, arbrofi, a chymhwyso ymarferol",
+                q2_op3_label: "Mewn amgylchedd gwaith go iawn",
+                q2_op4_label: "Gyda chymysgedd o theori ac ymarfer",
+                q3_title: "3. Beth yw eu huchelgeisiau ar gyfer y dyfodol?",
+                q3_notes_label: "(Mae'n iawn os nad ydyn nhw'n gwybod eto! Archwiliwch syniadau a phosibiliadau.)",
                 next_steps_title: "Ein Rhestr Wirio Camau Nesaf",
-                step1_text: "Ymweld â diwrnodau agored coleg/chweched dosbarth.",
-                step2_text: "Siarad â chynghorydd gyrfaoedd yn yr ysgol.",
-                step3_text: "Ymchwilio i gyrsiau/prentisiaethau penodol ar-lein.",
-                step4_text: "Chwilio am swyddi prentisiaeth gwag lleol.",
-                step5_text: "Annog profiad gwaith neu wirfoddoli.",
-                other_pathways_title: "Llwybrau a Chymorth Arall",
-                other_pathways_text: "Gall rhai pobl ifanc elwa o Hyfforddeiaethau (i baratoi ar gyfer prentisiaeth) neu Interniaethau â Chymorth (ar gyfer y rhai sydd â chynllun ADY). Siaradwch bob amser â Chydlynydd Anghenion Addysgol Arbennig (AAA) neu arweinydd gyrfaoedd yr ysgol am gyngor wedi'i deilwra."
+                step1_text: "Ymweld â diwrnodau agored colegau a chweched dosbarth.",
+                step2_text: "Siarad ag athrawon a chynghorydd gyrfaoedd yr ysgol.",
+                step3_text: "Ymchwilio i gyrsiau a phrentisiaethau penodol ar-lein.",
+                step4_text: "Chwilio am swyddi prentisiaeth gwag ar wefannau'r llywodraeth a chyflogwyr.",
+                step5_text: "Annog profiad gwaith neu wirfoddoli perthnasol.",
+                other_pathways_title: "Llwybrau a Chymorth Eraill",
+                other_pathways_text: "Mae llwybrau gwerthfawr eraill ar gael. Mae <strong>Interniaethau â Chymorth</strong> a <strong>Hyfforddeiaethau</strong> yn darparu cymorth wedi'i deilwra ar gyfer pobl ifanc ag anghenion dysgu ychwanegol neu Gynlluniau Addysg, Iechyd a Gofal (ADG), gan ganolbwyntio ar sgiliau gwaith a byw'n annibynnol. Mae rhai'n ymuno â'r <strong>lluoedd arfog</strong>, sy'n cynnig hyfforddiant, cymwysterau, a gyrfa strwythuredig. Gall rhaglenni hyfforddi sector-benodol neu waith lefel mynediad hefyd fod yn gamau cyntaf rhagorol. Cysylltwch â gwasanaeth gyrfaoedd eich ysgol neu goleg i archwilio'r holl opsiynau sydd ar gael i gefnogi uchelgeisiau eich plentyn."
             }
         };
 
