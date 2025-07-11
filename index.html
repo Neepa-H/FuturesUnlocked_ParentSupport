@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="doc_title">Supporting Your Child's Next Steps: Post-16 Options After Year 11</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -338,9 +337,7 @@
         </select>
     </div>
 
-    <!-- Side 1 of the Infographic -->
     <div class="infographic-side">
-        <!-- Title and Intro Panel -->
         <div class="text-center mb-8">
             <h1 class="text-5xl md:text-6xl font-extrabold text-blue-800 mb-4 leading-tight tracking-tight">
                 <span class="text-indigo-600" id="main_title_part1">Your Future Unlocked:</span><br>
@@ -351,10 +348,8 @@
             </p>
         </div>
 
-        <!-- Visual Summary of Post-16 Pathways Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
 
-            <!-- A-levels Card -->
             <div class="option-card bg-sky-100 p-6 rounded-2xl shadow-lg border-b-4 border-sky-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Compass Icon">🧭</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -385,7 +380,6 @@
                 <p id="al_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- BTECs Card -->
             <div class="option-card bg-emerald-100 p-6 rounded-2xl shadow-lg border-b-4 border-emerald-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Gear Icon">⚙️</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -416,7 +410,6 @@
                 <p id="btec_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- T-Levels Card -->
             <div class="option-card bg-amber-100 p-6 rounded-2xl shadow-lg border-b-4 border-amber-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Briefcase Icon">💼</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -447,7 +440,6 @@
                 <p id="tl_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- IB Diploma Card -->
             <div class="option-card bg-rose-100 p-6 rounded-2xl shadow-lg border-b-4 border-rose-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Globe Icon">🌍</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -478,7 +470,6 @@
                 <p id="ib_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- Apprenticeships Card -->
             <div class="option-card bg-violet-100 p-6 rounded-2xl shadow-lg border-b-4 border-violet-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Wrench Icon">🔧</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -509,7 +500,6 @@
                 <p id="app_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
 
-            <!-- Work with Training Card -->
             <div class="option-card bg-slate-100 p-6 rounded-2xl shadow-lg border-b-4 border-slate-400 cursor-pointer">
                 <span class="text-6xl mb-4" role="img" aria-label="Lightbulb Icon">💡</span>
                 <div class="bg-white p-4 rounded-lg">
@@ -540,7 +530,6 @@
                  <p id="work_reflection_prompt" class="text-sm text-gray-500 italic mt-2"></p>
             </div>
         </div>
-        <!-- Other Pathways Section -->
         <div id="other_pathways_card" class="w-full max-w-5xl mt-8 p-8 rounded-2xl bg-blue-50 border border-blue-200">
             <div class="text-center">
                 <span class="icon text-5xl mb-4" role="img" aria-label="Magnifying Glass Icon">🔍</span>
@@ -552,13 +541,11 @@
 
     <div class="infographic-side">
 
-        <!-- Self-Reflection and Action Planning Section -->
         <div class="w-full max-w-5xl reflection-section bg-gray-800 text-white p-8 rounded-2xl">
             <div class="text-center mb-10">
                 <h3 class="text-4xl font-extrabold text-white mb-3" id="reflect_header"></h3>
             </div>
 
-            <!-- Learning Style -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="learning_style_question"></h4>
                 <p class="text-gray-300 mb-4" id="learning_style_prompt"></p>
@@ -571,7 +558,6 @@
                 </div>
             </div>
 
-            <!-- Aspirations -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="aspirations_question"></h4>
                 <p class="text-gray-300 mb-4" id="aspirations_prompt"></p>
@@ -587,38 +573,43 @@
                 <h3 class="text-4xl font-extrabold text-white mb-3" id="compare_decide_header"></h3>
             </div>
 
-            <!-- Good Fit -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="good_fit_question"></h4>
                 <p class="text-gray-300 mb-4" id="good_fit_prompt"></p>
+                <div class="fillable-line"></div>
+                <div class="fillable-line"></div>
             </div>
 
-            <!-- Learn More -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="learn_more_question"></h4>
                 <p class="text-gray-300 mb-4" id="talk_through_learn_more_prompt"></p>
+                <div class="fillable-line"></div>
+                <div class="fillable-line"></div>
             </div>
 
             <div class="text-center my-10">
                 <h3 class="text-4xl font-extrabold text-white mb-3" id="next_steps_header"></h3>
             </div>
 
-            <!-- Next Step -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_next_step_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="next_step_prompt_text"></p>
+                <div class="fillable-line"></div>
+                <div class="fillable-line"></div>
             </div>
 
-            <!-- Parent Questions -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_questions_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="parent_questions_prompt_text"></p>
+                <div class="fillable-line"></div>
+                <div class="fillable-line"></div>
             </div>
 
-            <!-- Who to Talk To -->
             <div class="reflection-question">
                 <h4 class="text-xl font-bold text-white mb-2" id="parent_who_to_talk_prompt"></h4>
                 <p class="text-gray-300 mb-4" id="who_to_talk_prompt_text"></p>
+                <div class="fillable-line"></div>
+                <div class="fillable-line"></div>
             </div>
         </div>
     </div>
@@ -740,13 +731,11 @@
                 label_goal_earn_money_parent: "Earn money & learn",
                 label_goal_real_experience_parent: "Gain real-world experience",
                 label_goal_try_different_parent: "Explore different paths",
-
                 compare_decide_header: "Talk It Through Together",
                 good_fit_question: "Which one(s) feel like a good fit for your child right now?",
                 good_fit_prompt: "💡 <strong>Thinking Prompt:</strong> Which of these pathways genuinely excites your child? Which ones align with their strengths, even if they seem a little challenging?",
                 learn_more_question: "What questions could help us feel more confident in our choices?",
                 talk_through_learn_more_prompt: "💡 <strong>Thinking Prompt:</strong> What specific details about a pathway would make you and your child feel more secure in a decision? For example, about progression, daily life, or support systems?",
-
                 next_steps_header: "What You Can Do Next",
                 parent_next_step_prompt: "What is one small thing I could do this week to support my child’s journey?",
                 next_step_prompt_text: "💡 <strong>Thinking Prompt:</strong> To get started, what’s one practical, easy step you could take? Maybe help them research a specific college, or arrange a conversation with someone in a career they’re curious about?",
@@ -794,148 +783,228 @@
                 btec_reality_label: "الحقيقة:",
                 btec_reality_text: "تطور المهارات العملية التي يقدرها أصحاب العمل والجامعات.",
                 btec_reflection_prompt: "هل يفضل طفلي العمل على المشاريع بدلاً من الامتحانات؟",
-                reflection_title: "وقت للتفكير والتخطيط",
-                reflection_subtitle: "استخدم هذه الأسئلة لإجراء محادثة هادفة مع طفلك.",
-                q1_title: "1. ما هي نقاط قوة وشغف طفلي؟",
-                q1_op1_label: "أكاديمي وتحليلي",
-                q1_op2_label: "إبداعي وعملي",
-                q1_op3_label: "عملي وحل المشكلات",
-                q1_op4_label: "اجتماعي وتواصلي",
-                q1_notes_label: "ملاحظات حول مواضيعهم أو هواياتهم المفضلة:",
-                q2_title: "2. كيف يتعلم طفلي بشكل أفضل؟",
-                q2_op1_label: "في فصل دراسي، من خلال النظرية",
-                q2_op2_label: "عن طريق العمل والتطبيق العملي",
-                q2_op3_label: "في بيئة عمل",
-                q2_op4_label: "مزيج من النظرية والتطبيق",
-                q3_title: "3. ما هي تطلعاتهم على المدى الطويل؟",
-                q3_notes_label: "(لا بأس إذا لم يكونوا يعرفون بعد! فقط استكشفوا الأفكار.)",
-                next_steps_title: "قائمة خطواتنا التالية",
-                step1_text: "زيارة الأيام المفتوحة للكليات/المدارس الثانوية.",
-                step2_text: "التحدث إلى مستشار مهني في المدرسة.",
-                step3_text: "البحث عن دورات/تدريبات مهنية محددة عبر الإنترنت.",
-                step4_text: "البحث عن وظائف تدريب مهني محلية شاغرة.",
-                step5_text: "تشجيع الخبرة العملية أو العمل التطوعي.",
-                other_pathways_title: "مسارات أخرى ودعم",
+                tl_title: "T-Levels",
+                tl_description: "مزيج من التعلم في الفصول الدراسية وتدريب عملي طويل.",
+                tl_key_info_header: "معلومات أساسية وحقائق:",
+                tl_what_label: "ما هي:",
+                tl_what_text: "مزيج من 80% تعلم في الفصل و 20% خبرة عملية، بما في ذلك تدريب عملي لا يقل عن 45 يومًا.",
+                tl_entry_label: "شروط القبول:",
+                tl_entry_text: "تختلف، ولكن بشكل عام تتطلب 5 شهادات GCSE بما في ذلك اللغة الإنجليزية والرياضيات بدرجة 4 أو أعلى.",
+                tl_assessment_label: "التقييم:",
+                tl_assessment_text: "مزيج من الامتحانات والمشاريع العملية ومراجعة من صاحب العمل.",
+                tl_progression_label: "التقدم:",
+                tl_progression_text: "تؤدي إلى وظائف ماهرة، أو تدريب مهني عالٍ، أو جامعة (يتم منح نقاط UCAS).",
+                tl_stereotype_label: "الصورة النمطية:",
+                tl_stereotype_text: "\"إنها فقط للحرف\" / \"إنها جديدة جدًا وغير مثبتة\".",
+                tl_reality_label: "الحقيقة:",
+                tl_reality_text: "تعادل 3 مستويات A-Levels، وتوفر خبرة عملية قيمة، وهي مصممة بالتعاون مع كبار أصحاب العمل.",
+                tl_reflection_prompt: "هل سيستفيد طفلي من مزيج الدراسة الأكاديمية والخبرة العملية الكبيرة؟",
+                ib_title: "دبلوم IB",
+                ib_description: "منهج دولي واسع بست مواد.",
+                ib_key_info_header: "معلومات أساسية وحقائق:",
+                ib_what_label: "ما هي:",
+                ib_what_text: "برنامج شامل لمدة عامين يدرس 6 مواد (من اللغات إلى العلوم)، بالإضافة إلى برنامج أساسي يركز على التفكير النقدي والبحث.",
+                ib_entry_label: "شروط القبول:",
+                ib_entry_text: "متطلبات قبول صارمة، تتطلب عادةً 5 شهادات GCSE على الأقل بدرجة 7-9 (A-A*).",
+                ib_assessment_label: "التقييم:",
+                ib_assessment_text: "مزيج من الامتحانات النهائية والأعمال الدراسية المكثفة، بما في ذلك مشروع بحثي مستقل رئيسي (المقالة الموسعة).",
+                ib_progression_label: "التقدم:",
+                ib_progression_text: "مؤهل ممتاز للتقدم إلى أفضل الجامعات في المملكة المتحدة والعالم.",
+                ib_stereotype_label: "الصورة النمطية:",
+                ib_stereotype_text: "\"إنها فقط للعباقرة\" / \"عبء العمل مستحيل\".",
+                ib_reality_label: "الحقيقة:",
+                ib_reality_text: "إنها صعبة أكاديميًا ولكنها تطور مهارات استثنائية في إدارة الوقت والبحث ومنظورًا عالميًا.",
+                ib_reflection_prompt: "هل طفلي متفوق في كل المواد ومتحمس ذاتيًا ويستمتع بتحدي أكاديمي صارم؟",
+                app_title: "التدريب المهني",
+                app_description: "اكسب أثناء تعلمك في وظيفة حقيقية مع تدريب.",
+                app_key_info_header: "معلومات أساسية وحقائق:",
+                app_what_label: "ما هي:",
+                app_what_text: "وظيفة بدوام كامل مع تدريب منظم. يقضي 20% على الأقل من الوقت في تدريب 'خارج العمل' مع كلية أو مزود تدريب.",
+                app_entry_label: "شروط القبول:",
+                app_entry_text: "تختلف بشكل كبير حسب المستوى (متوسط، متقدم، عالٍ، درجة). البعض ليس لديه متطلبات رسمية، والبعض الآخر يتطلب A-Levels أو ما يعادلها.",
+                app_assessment_label: "التقييم:",
+                app_assessment_text: "تقييم مستمر للمهارات أثناء العمل واختبارات معرفية، تتوج بتقييم نقطة النهاية (EPA).",
+                app_progression_label: "التقدم:",
+                app_progression_text: "وظيفة بدوام كامل، أو ترقية، أو التقدم إلى تدريب مهني بمستوى أعلى (حتى مستوى الدرجة والماجستير).",
+                app_stereotype_label: "الصورة النمطية:",
+                app_stereotype_text: "\"إنها منخفضة الأجر وفقط للحرف اليدوية\".",
+                app_reality_label: "الحقيقة:",
+                app_reality_text: "متوفرة في أكثر من 1500 دور وظيفي، من القانون إلى التسويق الرقمي. تزداد الرواتب مع الخبرة والمستوى.",
+                app_reflection_prompt: "هل طفلي حريص على دخول عالم العمل وكسب المال والتعلم بطريقة عملية؟",
+                work_title: "العمل مع التدريب",
+                work_description: "دخول سوق العمل في دور يتضمن مؤهلات تدريبية رسمية ومعترف بها.",
+                work_key_info_header: "معلومات أساسية وحقائق:",
+                work_what_label: "ما هي:",
+                work_what_text: "وظيفة على مستوى المبتدئين تتضمن عنصرًا تدريبيًا منظمًا، مما يؤدي إلى الحصول على مؤهل معتمد ذي صلة بالصناعة.",
+                work_entry_label: "شروط القبول:",
+                work_entry_text: "تعتمد بشكل كبير على صاحب العمل والدور. في كثير من الأحيان، يتم تقييم الموقف والموثوقية والإمكانات على المؤهلات الرسمية.",
+                work_assessment_label: "التقييم:",
+                work_assessment_text: "بناءً على الأداء في الدور الوظيفي والانتهاء بنجاح من الدورات والتقييمات التدريبية المرتبطة به.",
+                work_progression_label: "التقدم:",
+                work_progression_text: "يمكن أن يؤدي إلى التقدم الوظيفي داخل الشركة، أو الحصول على مؤهلات مهنية إضافية، أو أن يكون بمثابة نقطة انطلاق لأدوار أخرى.",
+                work_stereotype_label: "الصورة النمطية:",
+                work_stereotype_text: "\"إنها مجرد وظيفة مسدودة بلا آفاق حقيقية\".",
+                work_reality_label: "الحقيقة:",
+                work_reality_text: "يمكن أن تكون خطوة أولى ممتازة على سلم الحياة المهنية، مما يسمح للشباب باكتساب خبرة حيوية ومؤهلات معترف بها في الصناعة.",
+                work_reflection_prompt: "هل لدى طفلي مسار وظيفي واضح في ذهنه ويريد أن يبدأ على الفور؟",
+                reflect_header: "دعونا نتأمل: دعم الخطوة التالية لطفلك",
+                learning_style_question: "ما هو أسلوب تعلم طفلك؟",
+                learning_style_prompt: "💡 <strong>فكرة للتفكير:</strong> كيف يتعلم طفلك بشكل طبيعي أفضل – من خلال القيام بالأشياء، القراءة، مناقشة الأفكار، أو مشاهدة الآخرين؟ ما هي المواد المدرسية أو الهوايات التي تثير فضولهم؟",
+                label_learning_doing_parent: "عملي (بالفعل)",
+                label_learning_writing_parent: "أكاديمي (بالقراءة/الكتابة)",
+                label_learning_talking_parent: "تعاوني (بالتحدث)",
+                label_learning_watching_parent: "ملاحظة (بالمشاهدة)",
+                label_learning_building_parent: "عملي (بالبناء)",
+                aspirations_question: "ما هي طموحات طفلك؟",
+                aspirations_prompt: "💡 <strong>فكرة للتفكير:</strong> بخلاف المؤهلات، ما الذي يحفز طفلك حقًا؟ ما نوع العمل الذي سيجعلهم يشعرون بالرضا، أو ما نوع التأثير الذي يأملون في إحداثه؟",
+                label_goal_university_parent: "الذهاب إلى الجامعة",
+                label_goal_earn_money_parent: "كسب المال والتعلم",
+                label_goal_real_experience_parent: "اكتساب خبرة في العالم الحقيقي",
+                label_goal_try_different_parent: "استكشاف مسارات مختلفة",
+                compare_decide_header: "تحدثوا عنها معًا",
+                good_fit_question: "أي من هذه الخيارات يبدو مناسبًا لطفلك الآن؟",
+                good_fit_prompt: "💡 <strong>فكرة للتفكير:</strong> أي من هذه المسارات يثير حماس طفلك حقًا؟ أي منها يتوافق مع نقاط قوتهم، حتى لو بدت صعبة بعض الشيء؟",
+                learn_more_question: "ما هي الأسئلة التي يمكن أن تساعدنا على الشعور بثقة أكبر في اختياراتنا؟",
+                talk_through_learn_more_prompt: "💡 <strong>فكرة للتفكير:</strong> ما هي التفاصيل المحددة حول المسار التي ستجعل أنت وطفلك تشعران بأمان أكبر في القرار؟ على سبيل المثال، حول التقدم، الحياة اليومية، أو أنظمة الدعم؟",
+                next_steps_header: "ما يمكنك فعله بعد ذلك",
+                parent_next_step_prompt: "ما هو الشيء الصغير الذي يمكنني فعله هذا الأسبوع لدعم رحلة طفلي؟",
+                next_step_prompt_text: "💡 <strong>فكرة للتفكير:</strong> للبدء، ما هي الخطوة العملية السهلة التي يمكنك اتخاذها؟ ربما مساعدتهم في البحث عن كلية معينة، أو ترتيب محادثة مع شخص في مهنة يثير فضولهم؟",
+                parent_questions_prompt: "ما هي الأسئلة التي يمكن أن تساعدنا على الشعور بثقة أكبر في اختياراتنا؟",
+                parent_questions_prompt_text: "💡 <strong>فكرة للتفكير:</strong> كوالد، ما هي الأسئلة المالية أو اللوجستية أو طويلة الأجل التي لديك حول هذه الخيارات؟ كيف يمكنك العثور على تلك الإجابات؟",
+                parent_who_to_talk_prompt: "هل هناك شخص يمكننا اللجوء إليه للحصول على المشورة (مثل مستشار مهني، مدرس، صديق)؟",
+                who_to_talk_prompt_text: "💡 <strong>فكرة للتفكير:</strong> من في حياة طفلك (أو في شبكتك الخاصة) يمكن أن يقدم رؤى قيمة أو تشجيعًا؟ فكر في مستشاري المهن، والمعلمين، وأصدقاء العائلة، أو المرشدين.",
+                other_pathways_title: "مسارات ودعم آخر",
                 other_pathways_text: "يختار بعض الطلاب مسارات غير معروضة في الشبكة الرئيسية يمكن أن تكون ذات قيمة مماثلة. على سبيل المثال، توفر التدريبات الداخلية المدعومة وبرامج التدريب دعمًا منظمًا للشباب الذين لديهم خطط التعليم والصحة والرعاية (EHC) أو احتياجات إضافية. تتضمن هذه التدريب أثناء العمل وتركيزًا قويًا على بناء الاستقلالية والتوظيف. ينضم بعض الطلاب إلى القوات المسلحة، حيث يتم الجمع بين التدريب والمؤهلات والتطوير الوظيفي والخدمة. يمكن أن يساعد العمل المبتدئ أو برامج التدريب الخاصة بقطاعات معينة الشباب أيضًا على بناء المهارات والانتقال إلى التدريب المهني أو الدراسة الإضافية. تحدث مع مدرستك أو كليتك أو خدمة الوظائف المحلية لمعرفة ما هو متاح وما هو الأفضل لدعم أهداف طفلك."
             },
             cy: {
                 doc_title: "Cefnogi Camau Nesaf Eich Plentyn: Opsiynau Ôl-16 ar ôl Blwyddyn 11",
-                main_title_part1: "Eich Dyfodol wedi'i Ddatgloi:",
+                main_title_part1: "Datgloi Eich Dyfodol:",
                 main_title_part2: "Llywio Llwybrau Ôl-16",
-                intro_text: "Gall helpu'ch plentyn i benderfynu ar ei lwybr ar ôl Blwyddyn 11 fod yn gam mawr. Mae'r canllaw hwn yn esbonio'r prif opsiynau a sut y gallwch gefnogi eu dewisiadau.",
-                al_title: "Safon Uwch",
-                al_description: "Pynciau academaidd, yn ddelfrydol ar gyfer llwybrau prifysgol.",
-                al_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                al_what_label: "Beth:",
-                al_what_text: "Plymio'n ddwfn i 3-4 pwnc academaidd dros 2 flynedd.",
-                al_entry_label: "Mynediad:",
-                al_entry_text: "5+ TGAU @ 4/C (neu'n uwch yn y pynciau a ddewiswyd).",
+                intro_text: "Gall helpu'ch plentyn i benderfynu ar ei lwybr ar ôl Blwyddyn 11 fod yn gam mawr. Mae'r canllaw hwn yn esbonio'r prif opsiynau a sut y gallwch gefnogi ei ddewisiadau.",
+                al_title: "Lefelau Safon Uwch (Lefelau A)",
+                al_description: "Cymwysterau academaidd traddodiadol, sy'n cael eu gwerthfawrogi'n fawr ar gyfer mynediad i'r brifysgol.",
+                al_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                al_what_label: "Beth ydyw:",
+                al_what_text: "Cwrs 2 flynedd yn astudio 3-4 pwnc o'ch dewis yn fanwl. Mae'r ffocws ar ddamcaniaeth a gwybodaeth academaidd.",
+                al_entry_label: "Gofynion Mynediad:",
+                al_entry_text: "Fel arfer, 5 TGAU neu fwy ar raddau 9-4 (A*-C), yn aml gyda gofynion gradd uwch (e.e., 6/B) yn y pynciau a ddewiswyd.",
                 al_assessment_label: "Asesu:",
-                al_assessment_text: "Arholiadau terfynol yn bennaf (rhywfaint o waith cwrs).",
+                al_assessment_text: "Yn bennaf drwy <strong>arholiadau terfynol</strong> ar ddiwedd y 2 flynedd, gyda rhai pynciau'n cynnwys elfen o waith cwrs.",
                 al_progression_label: "Dilyniant:",
-                al_progression_text: "Prif lwybr i'r brifysgol, hefyd Prentisiaethau Uwch/Gradd.",
-                al_stereotype_label: "Ystrydeb:",
-                al_stereotype_text: "\"Dim ond ar gyfer y brifysgol\" / \"rhy academaidd\".",
-                al_reality_label: "Realiti:",
-                al_reality_text: "Yn datblygu sgiliau dadansoddol, yn agor llawer o ddrysau. Nid dyma'r unig lwybr i'r brifysgol.",
+                al_progression_text: "Y prif lwybr i'r <strong>brifysgol</strong>. Hefyd yn cael ei barchu ar gyfer Prentisiaethau Uwch/Gradd a chyflogaeth uniongyrchol.",
+                al_stereotype_label: "Y Stereoteip:",
+                al_stereotype_text: "\"Dyma'r unig gymhwyster 'go iawn'\" / \"Dim ond ar gyfer mynd i'r brifysgol y mae'n dda.\"",
+                al_reality_label: "Y Gwirionedd:",
+                al_reality_text: "Mae'n meithrin sgiliau dadansoddol hanfodol ac yn agor llawer o ddrysau. Nid dyma'r *unig* lwybr i'r brifysgol.",
+                al_reflection_prompt: "A fyddai fy mhlentyn yn mwynhau'r her o astudio pynciau penodol yn fanwl?",
                 btec_title: "BTEC",
-                btec_description: "Ymarferol ac yn seiliedig ar waith cwrs, yn canolbwyntio ar sgiliau galwedigaethol.",
-                btec_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                btec_what_label: "Beth:",
-                btec_what_text: "Dysgu cymhwysol mewn sectorau penodol (e.e., Iechyd, Busnes, TG).",
-                btec_entry_label: "Mynediad:",
-                btec_entry_text: "Yn amrywio, fel arfer 4-5 TGAU @ 4/C.",
+                btec_description: "Cymwysterau galwedigaethol sy'n canolbwyntio ar sgiliau ymarferol a gwaith cwrs.",
+                btec_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                btec_what_label: "Beth ydyw:",
+                btec_what_text: "Dysgu cymhwysol wedi'i anelu at sector diwydiant penodol, e.e., Busnes, Iechyd a Gofal Cymdeithasol, neu TG.",
+                btec_entry_label: "Gofynion Mynediad:",
+                btec_entry_text: "Yn amrywio, ond fel arfer mae angen 4-5 TGAU ar raddau 9-4 (A*-C), gan gynnwys Saesneg a Mathemateg yn aml.",
                 btec_assessment_label: "Asesu:",
-                btec_assessment_text: "Gwaith cwrs, prosiectau ac ymarferion yn bennaf.",
+                btec_assessment_text: "Yn bennaf drwy <strong>waith cwrs parhaus</strong>, aseiniadau ymarferol, a phrosiectau. Mae gan rai arholiadau allanol.",
                 btec_progression_label: "Dilyniant:",
-                btec_progression_text: "Prifysgol (a dderbynnir gan 95%), prentisiaethau, neu waith.",
-                btec_stereotype_label: "Ystrydeb:",
-                btec_stereotype_text: "\"Haws\" / \"ddim cystal â Safon Uwch\".",
-                btec_reality_label: "Realiti:",
-                btec_reality_text: "Yn datblygu sgiliau ymarferol a werthfawrogir gan gyflogwyr a phrifysgolion.",
-                tl_title: "Lefelau-T",
-                tl_description: "Cymysgedd o ddysgu yn yr ystafell ddosbarth a lleoliad diwydiant hir.",
-                tl_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                tl_what_label: "Beth:",
-                tl_what_text: "80% yn y coleg, 20% (45+ diwrnod) ar leoliad gwaith.",
-                tl_entry_label: "Mynediad:",
-                tl_entry_text: "Yn amrywio, yn aml mae angen TGAU Saesneg/Mathemateg ar 4.",
+                btec_progression_text: "Llwybr rhagorol i'r <strong>brifysgol</strong> (mae dros 95% yn eu derbyn), Prentisiaethau Uwch, neu gyflogaeth uniongyrchol.",
+                btec_stereotype_label: "Y Stereoteip:",
+                btec_stereotype_text: "\"Mae'n opsiwn 'haws'\" / \"Ddim cystal â Lefelau A.\"",
+                btec_reality_label: "Y Gwirionedd:",
+                btec_reality_text: "Cymhwyster a barchir yn fawr sy'n datblygu sgiliau ymarferol y mae cyflogwyr a phrifysgolion yn eu gwerthfawrogi.",
+                btec_reflection_prompt: "A yw'n well gan fy mhlentyn ddysgu drwy wneud a gweithio ar brosiectau yn hytrach nag arholiadau?",
+                tl_title: "Lefelau T",
+                tl_description: "Cymhwyster newydd sy'n cyfuno astudio yn y dosbarth â lleoliad gwaith sylweddol.",
+                tl_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                tl_what_label: "Beth ydyw:",
+                tl_what_text: "Cwrs 2 flynedd sy'n cyfateb i 3 Lefel A. Mae tua 80% yn y coleg ac 20% (o leiaf 45 diwrnod) mewn lleoliad diwydiant perthnasol.",
+                tl_entry_label: "Gofynion Mynediad:",
+                tl_entry_text: "Fel arfer 5 TGAU ar raddau 9-4, gan gynnwys Saesneg a Mathemateg yn aml. Gall rhai gofyn am radd uwch mewn pynciau perthnasol.",
                 tl_assessment_label: "Asesu:",
-                tl_assessment_text: "Arholiadau, prosiectau, ac adolygiad cyflogwr.",
+                tl_assessment_text: "Cymysgedd o arholiadau, gwaith cwrs, a gwerthusiad gan y cyflogwr o'r lleoliad diwydiant.",
                 tl_progression_label: "Dilyniant:",
-                tl_progression_text: "Gwaith medrus, Prentisiaethau Uwch, neu brifysgol.",
-                tl_stereotype_label: "Ystrydeb:",
-                tl_stereotype_text: "\"Dim ond ar gyfer gwaith\" / \"heb ei brofi\".",
-                tl_reality_label: "Realiti:",
-                tl_reality_text: "Yn cyfateb i 3 Safon Uwch, yn rhoi profiad gwaith go iawn.",
-                ib_title: "Diploma IB",
-                ib_description: "Cwricwlwm rhyngwladol, eang gyda chwe phwnc.",
-                ib_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                ib_what_label: "Beth:",
-                ib_what_text: "6 phwnc ar draws gwahanol feysydd, a rhaglen graidd.",
-                ib_entry_label: "Mynediad:",
-                ib_entry_text: "Gofynion uchel, yn aml 5+ TGAU ar 6/B neu'n uwch.",
+                tl_progression_text: "Yn ddelfrydol ar gyfer symud ymlaen i <strong>waith medrus</strong>, Prentisiaeth Uwch/Gradd, neu astudiaethau prifysgol.",
+                tl_stereotype_label: "Y Stereoteip:",
+                tl_stereotype_text: "\"Dim ond ar gyfer prentisiaethau y mae'n dda\" / \"Cymhwyster newydd heb ei brofi.\"",
+                tl_reality_label: "Y Gwirionedd:",
+                tl_reality_text: "Wedi'i ddatblygu gyda chyflogwyr i ddarparu'r sgiliau sydd eu hangen ar ddiwydiant. Mae'n cynnig profiad gwaith go iawn gwerthfawr.",
+                tl_reflection_prompt: "A fyddai'r cyfuniad o ddysgu yn y dosbarth a phrofiad gwaith go iawn yn gweddu i'm plentyn?",
+                ib_title: "Y Fagloriaeth Ryngwladol (IB)",
+                ib_description: "Rhaglen eang, heriol a gydnabyddir yn rhyngwladol.",
+                ib_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                ib_what_label: "Beth ydyw:",
+                ib_what_text: "Astudir chwe phwnc (rhai ar lefel uwch, rhai ar lefel safonol) ar draws ystod o ddisgyblaethau, ynghyd â 'rhaglen graidd'.",
+                ib_entry_label: "Gofynion Mynediad:",
+                ib_entry_text: "Fel arfer, gofynion TGAU uchel iawn, yn aml 5 neu fwy o raddau 9-6 (A*-B), gan gynnwys Saesneg a Mathemateg.",
                 ib_assessment_label: "Asesu:",
-                ib_assessment_text: "Arholiadau a gwaith cwrs helaeth.",
+                ib_assessment_text: "Cymysgedd o arholiadau terfynol a gwaith cwrs sylweddol, gan gynnwys traethawd estynedig.",
                 ib_progression_label: "Dilyniant:",
-                ib_progression_text: "Ardderchog ar gyfer prifysgolion gorau'r DU a rhyngwladol.",
-                ib_stereotype_label: "Ystrydeb:",
-                ib_stereotype_text: "\"Dim ond i athrylithwyr\" / \"gormod o waith\".",
-                ib_reality_label: "Realiti:",
-                ib_reality_text: "Heriau ond yn datblygu sgiliau rheoli amser a lledred gwybodaeth rhagorol.",
+                ib_progression_text: "Llwybr a barchir yn fawr i <strong>brifysgolion gorau'r DU a ledled y byd</strong>.",
+                ib_stereotype_label: "Y Stereoteip:",
+                ib_stereotype_text: "\"Dim ond ar gyfer y rhai mwyaf galluog\" / \"Mae'n ormod o waith.\"",
+                ib_reality_label: "Y Gwirionedd:",
+                ib_reality_text: "Mae'n heriol, ond mae'n datblygu sgiliau rheoli amser, ymchwil annibynnol, ac ehangder gwybodaeth rhagorol.",
+                ib_reflection_prompt: "A yw fy mhlentyn yn unigolyn cyflawn sy'n ffynnu ar her academaidd eang?",
                 app_title: "Prentisiaethau",
-                app_description: "Ennill cyflog wrth ddysgu mewn swydd go iawn gyda hyfforddiant.",
-                app_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                app_what_label: "Beth:",
-                app_what_text: "Swydd go iawn gyda hyfforddiant strwythuredig (20% i ffwrdd o'r swydd).",
-                app_entry_label: "Mynediad:",
-                app_entry_text: "Yn amrywio yn ôl lefel; nid oes gan rai unrhyw ofynion ffurfiol.",
+                app_description: "Ennill cyflog, cael profiad gwaith, a chael cymhwyster ar yr un pryd.",
+                app_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                app_what_label: "Beth ydyw:",
+                app_what_text: "Swydd go iawn gyda hyfforddiant strwythuredig. Mae o leiaf 20% o'r amser yn cael ei dreulio ar ddysgu y tu allan i'r gweithle, yn aml mewn coleg.",
+                app_entry_label: "Gofynion Mynediad:",
+                app_entry_text: "Yn amrywio'n fawr yn ôl y lefel (Canolradd, Uwch, Uwch, Gradd). Gall rhai fod angen TGAU penodol, tra bod eraill yn canolbwyntio ar botensial.",
                 app_assessment_label: "Asesu:",
-                app_assessment_text: "Tasgau ymarferol a phrofion gwybodaeth.",
+                app_assessment_text: "Asesiad parhaus yn y gweithle, tystiolaeth portffolio, a phrawf ymarferol terfynol (Asesiad Pwynt Terfyn).",
                 app_progression_label: "Dilyniant:",
-                app_progression_text: "Swydd amser llawn, prentisiaethau lefel uwch (hyd at lefel gradd).",
-                app_stereotype_label: "Ystrydeb:",
-                app_stereotype_text: "\"Cyflog isel\" / \"dim ond ar gyfer crefftau llaw\".",
-                app_reality_label: "Realiti:",
-                app_reality_text: "Ar gael mewn 1500+ o rolau swydd, o'r gyfraith i farchnata digidol. Mae'r tâl yn cynyddu gyda phrofiad.",
+                app_progression_text: "Gyrfa amser llawn, dyrchafiad, neu symud ymlaen i <strong>brentisiaeth lefel uwch</strong> (hyd at lefel gradd a Meistr).",
+                app_stereotype_label: "Y Stereoteip:",
+                app_stereotype_text: "\"Cyflog isel\" / \"Dim ond ar gyfer crefftau llaw y mae'n dda.\"",
+                app_reality_label: "Y Gwirionedd:",
+                app_reality_text: "Ar gael mewn dros 1500 o rolau, o'r gyfraith a pheirianneg i farchnata digidol. Mae cyflogau'n cynyddu'n sylweddol gyda phrofiad a lefel.",
+                app_reflection_prompt: "A yw fy mhlentyn yn awyddus i ddechrau gweithio, ennill arian, a dysgu mewn ffordd ymarferol?",
                 work_title: "Gwaith gyda Hyfforddiant",
-                work_description: "Ymuno â'r gweithlu gyda hyfforddiant cydnabyddedig.",
-                work_key_info_header: "Gwybodaeth Allweddol a Realiti:",
-                work_what_label: "Beth:",
-                work_what_text: "Swydd sy'n cynnwys cyrsiau hyfforddi ffurfiol, achrededig.",
-                work_entry_label: "Mynediad:",
-                work_entry_text: "Yn dibynnu ar y swydd, yn aml yn canolbwyntio ar agwedd a photensial.",
+                work_description: "Dechrau gyrfa gyda chymwysterau a gydnabyddir gan y diwydiant.",
+                work_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
+                work_what_label: "Beth ydyw:",
+                work_what_text: "Swydd lefel mynediad sy'n cynnwys rhaglen hyfforddi ffurfiol, strwythuredig i ddatblygu sgiliau penodol ar gyfer y swydd.",
+                work_entry_label: "Gofynion Mynediad:",
+                work_entry_text: "Yn dibynnu'n llwyr ar y cyflogwr a'r rôl. Yn aml, mae brwdfrydedd ac agwedd 'gallu gwneud' yr un mor bwysig â chymwysterau.",
                 work_assessment_label: "Asesu:",
-                work_assessment_text: "Perfformiad yn y swydd a chwblhau'r cwrs.",
+                work_assessment_text: "Yn seiliedig ar berfformiad yn y gweithle, cwblhau'r hyfforddiant, ac o bosibl ennill cymwysterau proffesiynol.",
                 work_progression_label: "Dilyniant:",
-                work_progression_text: "Dilyniant gyrfa, cymwysterau proffesiynol pellach.",
-                work_stereotype_label: "Ystrydeb:",
-                work_stereotype_text: "\"Swydd heb ddyfodol\" / \"dim cymwysterau\".",
-                work_reality_label: "Realiti:",
-                work_reality_text: "Gall fod yn llwybr cyflym i yrfa, gan ennill profiad a chymwysterau ar yr un pryd.",
-                reflection_title: "Amser i Fyfyrio a Chynllunio",
-                reflection_subtitle: "Defnyddiwch y cwestiynau hyn i gael sgwrs ystyrlon gyda'ch plentyn.",
-                q1_title: "1. Beth yw cryfderau a nwydau fy mhlentyn?",
-                q1_op1_label: "Academaidd a Dadansoddol",
-                q1_op2_label: "Creadigol ac Ymarferol",
-                q1_op3_label: "Ymarferol a Datrys Problemau",
-                q1_op4_label: "Cymdeithasol a Chyfathrebol",
-                q1_notes_label: "Nodiadau ar eu hoff bynciau neu hobïau:",
-                q2_title: "2. Sut mae fy mhlentyn yn dysgu orau?",
-                q2_op1_label: "Mewn ystafell ddosbarth, trwy theori",
-                q2_op2_label: "Trwy wneud a chymhwyso'n ymarferol",
-                q2_op3_label: "Mewn amgylchedd gwaith",
-                q2_op4_label: "Cymysgedd o theori ac ymarfer",
-                q3_title: "3. Beth yw eu dyheadau hirdymor?",
-                q3_notes_label: "(Mae'n iawn os nad ydyn nhw'n gwybod eto! Archwiliwch syniadau yn unig.)",
-                next_steps_title: "Ein Rhestr Wirio Camau Nesaf",
-                step1_text: "Ymweld â diwrnodau agored coleg/chweched dosbarth.",
-                step2_text: "Siarad â chynghorydd gyrfaoedd yn yr ysgol.",
-                step3_text: "Ymchwilio i gyrsiau/prentisiaethau penodol ar-lein.",
-                step4_text: "Chwilio am swyddi prentisiaeth gwag lleol.",
-                step5_text: "Annog profiad gwaith neu wirfoddoli.",
-                other_pathways_title: "Llwybrau Eraill",
-                other_pathways_text: "Mae rhai myfyrwyr yn dewis llwybrau nad ydynt yn cael eu dangos yn y prif grid ond a all fod yr un mor werthfawr. Er enghraifft, mae interniaethau â chymorth a phrentisiaethau â chymorth yn cynnig cymorth strwythuredig i bobl ifanc sydd â Chynlluniau Addysg, Iechyd a Gofal (CAHG) neu anghenion ychwanegol. Mae'r rhain yn cynnwys hyfforddiant swydd a ffocws cryf ar adeiladu annibyniaeth a chyflogadwyedd. Mae rhai myfyrwyr yn ymuno â'r Lluoedd Arfog, lle mae hyfforddiant, cymwysterau a datblygiad gyrfa yn cael eu cyfuno â gwasanaeth. Gall gwaith lefel mynediad neu raglenni hyfforddiant sector-benodol hefyd helpu pobl ifanc i adeiladu sgiliau a symud i brentisiaethau neu astudiaethau pellach. Siaradwch â'ch ysgol, coleg neu wasanaeth gyrfaoedd lleol i ddarganfod beth sydd ar gael a beth fyddai'n cefnogi nodau eich plentyn orau."
+                work_progression_text: "Dilyniant o fewn y cwmni, symud ymlaen i rolau mwy arbenigol, neu ddefnyddio'r profiad i wneud cais am brentisiaeth uwch.",
+                work_stereotype_label: "Y Stereoteip:",
+                work_stereotype_text: "\"Swydd heb ddyfodol\" / \"Dim ond gwaith heb sgiliau ydyw.\"",
+                work_reality_label: "Y Gwirionedd:",
+                work_reality_text: "Gall fod yn gam cyntaf rhagorol ar ysgol gyrfa, gan ddarparu profiad a hyfforddiant gwerthfawr heb y pwysau academaidd.",
+                work_reflection_prompt: "A oes gan fy mhlentyn lwybr gyrfa clir mewn golwg ac a fyddai'n elwa o brofiad uniongyrchol?",
+                reflect_header: "Amser i Fyfyrio: Cefnogi Cam Nesaf Eich Plentyn",
+                learning_style_question: "Beth yw arddull ddysgu eich plentyn?",
+                learning_style_prompt: "💡 <strong>Awydd Myfyrio:</strong> Sut mae'ch plentyn yn dysgu orau'n naturiol - drwy wneud pethau, darllen, trafod syniadau, neu wylio eraill? Pa bynciau ysgol neu hobïau sy'n tanio ei chwilfrydedd?",
+                label_learning_doing_parent: "Ymarferol (gwneud)",
+                label_learning_writing_parent: "Academaidd (darllen/ysgrifennu)",
+                label_learning_talking_parent: "Cydweithredol (siarad)",
+                label_learning_watching_parent: "Arsylwadol (gwylio)",
+                label_learning_building_parent: "Ymarferol (adeiladu)",
+                aspirations_question: "Beth yw dyheadau eich plentyn?",
+                aspirations_prompt: "💡 <strong>Awydd Myfyrio:</strong> Y tu hwnt i gymwysterau, beth sy'n ysgogi eich plentyn go iawn? Pa fath o waith fyddai'n gwneud iddo deimlo'n gyflawn, neu pa fath o effaith y mae'n gobeithio ei chael?",
+                label_goal_university_parent: "Mynd i'r brifysgol",
+                label_goal_earn_money_parent: "Ennill arian a dysgu",
+                label_goal_real_experience_parent: "Cael profiad byd go iawn",
+                label_goal_try_different_parent: "Archwilio llwybrau gwahanol",
+                compare_decide_header: "Siaradwch drwyddo Gyda'n Gilydd",
+                good_fit_question: "Pa un(au) sy'n teimlo'n ffit da i'ch plentyn ar hyn o bryd?",
+                good_fit_prompt: "💡 <strong>Awydd Myfyrio:</strong> Pa un o'r llwybrau hyn sy'n cyffroi eich plentyn yn wirioneddol? Pa rai sy'n cyd-fynd â'i gryfderau, hyd yn oed os ydynt yn ymddangos ychydig yn heriol?",
+                learn_more_question: "Pa gwestiynau allai ein helpu i deimlo'n fwy hyderus yn ein dewisiadau?",
+                talk_through_learn_more_prompt: "💡 <strong>Awydd Myfyrio:</strong> Pa fanylion penodol am lwybr fyddai'n gwneud i chi a'ch plentyn deimlo'n fwy diogel mewn penderfyniad? Er enghraifft, am ddilyniant, bywyd o ddydd i ddydd, neu systemau cymorth?",
+                next_steps_header: "Beth Allwch Chi Ei Wneud Nesaf",
+                parent_next_step_prompt: "Beth yw un peth bach y gallwn i ei wneud yr wythnos hon i gefnogi taith fy mhlentyn?",
+                next_step_prompt_text: "💡 <strong>Awydd Myfyrio:</strong> I ddechrau, beth yw un cam ymarferol, hawdd y gallech ei gymryd? Efallai eu helpu i ymchwilio i goleg penodol, neu drefnu sgwrs gyda rhywun mewn gyrfa y mae ganddynt ddiddordeb ynddi?",
+                parent_questions_prompt: "Pa gwestiynau allai ein helpu i deimlo'n fwy hyderus yn ein dewisiadau?",
+                parent_questions_prompt_text: "💡 <strong>Awydd Myfyrio:</strong> Fel rhiant, pa gwestiynau ariannol, logistaidd, neu hirdymor sydd gennych am yr opsiynau hyn? Sut allwch chi ddod o hyd i'r atebion hynny?",
+                parent_who_to_talk_prompt: "A oes rhywun y gallwn droi ato am gyngor (e.e. cynghorydd gyrfaoedd, tiwtor, ffrind)?",
+                who_to_talk_prompt_text: "💡 <strong>Awydd Myfyrio:</strong> Pwy ym mywyd eich plentyn (neu yn eich rhwydwaith eich hun) allai gynnig mewnwelediadau gwerthfawr neu anogaeth? Meddyliwch am gynghorwyr gyrfaoedd, athrawon, ffrindiau teulu, neu fentoriaid.",
+                other_pathways_title: "Llwybrau a Chymorth Eraill",
+                other_pathways_text: "Mae llwybrau gwerthfawr eraill ar gael. Mae <strong>Interniaethau â Chymorth</strong> a <strong>Hyfforddeiaethau</strong> yn darparu cymorth wedi'i deilwra ar gyfer pobl ifanc ag anghenion dysgu ychwanegol neu Gynlluniau Addysg, Iechyd a Gofal (ADG), gan ganolbwyntio ar sgiliau gwaith a byw'n annibynnol. Mae rhai'n ymuno â'r <strong>lluoedd arfog</strong>, sy'n cynnig hyfforddiant, cymwysterau, a gyrfa strwythuredig. Gall rhaglenni hyfforddi sector-benodol neu waith lefel mynediad hefyd fod yn gamau cyntaf rhagorol. Cysylltwch â gwasanaeth gyrfaoedd eich ysgol neu goleg i archwilio'r holl opsiynau sydd ar gael i gefnogi uchelgeisiau eich plentyn."
             },
             bn: {
                 doc_title: "আপনার সন্তানের পরবর্তী পদক্ষেপকে সমর্থন করা: ১১ বছর পর পোস্ট-১৬ বিকল্প",
@@ -1038,27 +1107,32 @@
                 work_reality_label: "বাস্তবতা:",
                 work_reality_text: "একটি কর্মজীবনের জন্য একটি দ্রুত পথ হতে পারে, একই সাথে অভিজ্ঞতা এবং যোগ্যতা অর্জন করে।",
                 work_reflection_prompt: "আমার সন্তানের কি একটি স্পষ্ট কর্মজীবনের পথ মাথায় আছে?",
-                reflection_title: "প্রতিফলন ও পরিকল্পনার সময়",
-                reflection_subtitle: "আপনার সন্তানের সাথে একটি অর্থপূর্ণ কথোপকথন করতে এই প্রশ্নগুলি ব্যবহার করুন।",
-                q1_title: "১. আমার সন্তানের শক্তি এবং আবেগ কী?",
-                q1_op1_label: "একাডেমিক এবং বিশ্লেষণাত্মক",
-                q1_op2_label: "সৃজনশীল এবং হাতে-কলমে",
-                q1_op3_label: "ব্যবহারিক এবং সমস্যা-সমাধান",
-                q1_op4_label: "সামাজিক এবং যোগাযোগমূলক",
-                q1_notes_label: "তাদের প্রিয় বিষয় বা শখের উপর নোট:",
-                q2_title: "২. আমার সন্তান কীভাবে সবচেয়ে ভালো শেখে?",
-                q2_op1_label: "একটি শ্রেণীকক্ষে, তত্ত্বের মাধ্যমে",
-                q2_op2_label: "করে এবং ব্যবহারিক প্রয়োগের মাধ্যমে",
-                q2_op3_label: "একটি কাজের পরিবেশে",
-                q2_op4_label: "তত্ত্ব এবং অনুশীলনের মিশ্রণ",
-                q3_title: "৩. তাদের দীর্ঘমেয়াদী আকাঙ্ক্ষা কী?",
-                q3_notes_label: "(তারা এখনও না জানলে ঠিক আছে! শুধু ধারণাগুলি অন্বেষণ করুন।)",
-                next_steps_title: "আমাদের পরবর্তী পদক্ষেপের চেকলিস্ট",
-                step1_text: "কলেজ/সিক্সথ ফর্মের খোলা দিনগুলিতে যান।",
-                step2_text: "স্কুলে একজন ক্যারিয়ার উপদেষ্টার সাথে কথা বলুন।",
-                step3_text: "অনলাইনে নির্দিষ্ট কোর্স/শিক্ষানবিশ নিয়ে গবেষণা করুন।",
-                step4_text: "স্থানীয় শিক্ষানবিশের শূন্যপদের সন্ধান করুন।",
-                step5_text: "কাজের অভিজ্ঞতা বা স্বেচ্ছাসেবকতায় উত্সাহিত করুন।",
+                reflect_header: "চলুন ভাবি: আপনার সন্তানের পরবর্তী পদক্ষেপকে সমর্থন করা",
+                learning_style_question: "আপনার সন্তানের শেখার ধরণ কী?",
+                learning_style_prompt: "💡 <strong>চিন্তার খোরাক:</strong> আপনার সন্তান স্বাভাবিকভাবে কীভাবে সবচেয়ে ভালো শেখে - কিছু করে, পড়ে, ধারণা নিয়ে আলোচনা করে, নাকি অন্যদের দেখে? কোন স্কুলের বিষয় বা শখ তাদের কৌতূহল জাগিয়ে তোলে?",
+                label_learning_doing_parent: "ব্যবহারিক (করার মাধ্যমে)",
+                label_learning_writing_parent: "একাডেমিক (পড়া/লেখার মাধ্যমে)",
+                label_learning_talking_parent: "সহযোগিতামূলক (কথা বলার মাধ্যমে)",
+                label_learning_watching_parent: "পর্যবেক্ষণমূলক (দেখার মাধ্যমে)",
+                label_learning_building_parent: "হাতে-কলমে (নির্মাণের মাধ্যমে)",
+                aspirations_question: "আপনার সন্তানের আকাঙ্ক্ষা কী?",
+                aspirations_prompt: "💡 <strong>চিন্তার খোরাক:</strong> যোগ্যতার বাইরে, আপনার সন্তানকে সত্যি কী অনুপ্রাণিত করে? কোন ধরনের কাজ তাদের পরিপূর্ণতা দেবে, বা তারা কী ধরনের প্রভাব ফেলবে বলে আশা করে?",
+                label_goal_university_parent: "বিশ্ববিদ্যালয়ে যাওয়া",
+                label_goal_earn_money_parent: "উপার্জন করা ও শেখা",
+                label_goal_real_experience_parent: "বাস্তব অভিজ্ঞতা অর্জন করা",
+                label_goal_try_different_parent: "বিভিন্ন পথ অন্বেষণ করা",
+                compare_decide_header: "একসাথে কথা বলুন",
+                good_fit_question: "এই মুহূর্তে আপনার সন্তানের জন্য কোনটি উপযুক্ত বলে মনে হচ্ছে?",
+                good_fit_prompt: "💡 <strong>চিন্তার খোরাক:</strong> এই পথগুলির মধ্যে কোনটি আপনার সন্তানকে সত্যিই উৎসাহিত করে? কোনটি তাদের শক্তির সাথে মিলে যায়, যদিও সেগুলি কিছুটা চ্যালেঞ্জিং মনে হতে পারে?",
+                learn_more_question: "কোন প্রশ্নগুলি আমাদের পছন্দগুলিতে আরও আত্মবিশ্বাসী হতে সাহায্য করতে পারে?",
+                talk_through_learn_more_prompt: "💡 <strong>চিন্তার খোরাক:</strong> একটি পথ সম্পর্কে কোন নির্দিষ্ট বিবরণ আপনাকে এবং আপনার সন্তানকে একটি সিদ্ধান্তে আরও নিরাপদ বোধ করাবে? উদাহরণস্বরূপ, অগ্রগতি, দৈনন্দিন জীবন, বা সহায়তা ব্যবস্থা সম্পর্কে?",
+                next_steps_header: "আপনি পরবর্তীতে কী করতে পারেন",
+                parent_next_step_prompt: "এই সপ্তাহে আমার সন্তানের যাত্রাকে সমর্থন করার জন্য আমি একটি ছোট কী করতে পারি?",
+                next_step_prompt_text: "💡 <strong>চিন্তার খোরাক:</strong> শুরু করার জন্য, আপনি একটি বাস্তবসম্মত, সহজ পদক্ষেপ কী নিতে পারেন? হয়তো তাদের একটি নির্দিষ্ট কলেজ গবেষণা করতে সাহায্য করা, অথবা তাদের আগ্রহী একটি পেশার কারো সাথে কথা বলার ব্যবস্থা করা?",
+                parent_questions_prompt: "কোন প্রশ্নগুলি আমাদের পছন্দগুলিতে আরও আত্মবিশ্বাসী হতে সাহায্য করতে পারে?",
+                parent_questions_prompt_text: "💡 <strong>চিন্তার খোরাক:</strong> একজন অভিভাবক হিসাবে, এই বিকল্পগুলি সম্পর্কে আপনার কী আর্থিক, লজিস্টিক বা দীর্ঘমেয়াদী প্রশ্ন আছে? আপনি কীভাবে সেই উত্তরগুলি খুঁজে পেতে পারেন?",
+                parent_who_to_talk_prompt: "পরামর্শের জন্য আমরা কার কাছে যেতে পারি (যেমন ক্যারিয়ার উপদেষ্টা, শিক্ষক, বন্ধু)?",
+                who_to_talk_prompt_text: "💡 <strong>চিন্তার খোরাক:</strong> আপনার সন্তানের জীবনে (বা আপনার নিজের নেটওয়ার্কে) কে মূল্যবান অন্তর্দৃষ্টি বা উৎসাহ দিতে পারে? ক্যারিয়ার উপদেষ্টা, শিক্ষক, পরিবারের বন্ধু বা পরামর্শদাতাদের কথা ভাবুন।",
                 other_pathways_title: "অন্যান্য পথ এবং সমর্থন",
                 other_pathways_text: "কিছু ছাত্রছাত্রী প্রধান গ্রিডে দেখানো হয়নি এমন পথ বেছে নেয় যা সমানভাবে মূল্যবান হতে পারে। উদাহরণস্বরূপ, সমর্থিত ইন্টার্নশিপ এবং প্রশিক্ষণার্থীদের জন্য শিক্ষা, স্বাস্থ্য ও যত্ন (EHC) পরিকল্পনা বা অতিরিক্ত চাহিদা সম্পন্ন তরুণদের জন্য কাঠামোগত সহায়তা প্রদান করে। এর মধ্যে চাকরির প্রশিক্ষণ এবং স্বাধীনতা ও কর্মসংস্থান যোগ্যতা তৈরিতে শক্তিশালী মনোযোগ অন্তর্ভুক্ত। কিছু ছাত্রছাত্রী সশস্ত্র বাহিনীতে যোগ দেয়, যেখানে প্রশিক্ষণ, যোগ্যতা এবং কর্মজীবনের উন্নয়ন পরিষেবার সাথে মিলিত হয়। প্রাথমিক স্তরের কাজ বা খাত-নির্দিষ্ট প্রশিক্ষণ কর্মসূচি তরুণদের দক্ষতা তৈরি করতে এবং শিক্ষানবিশ বা আরও পড়াশোনায় যেতে সাহায্য করতে পারে। আপনার স্কুল, কলেজ বা স্থানীয় ক্যারিয়ার পরিষেবার সাথে কথা বলুন কী পাওয়া যায় এবং আপনার সন্তানের লক্ষ্যগুলিকে সবচেয়ে ভালভাবে সমর্থন করবে তা খুঁজে বের করতে।"
             },
@@ -1163,27 +1237,32 @@
                 work_reality_label: "现实：",
                 work_reality_text: "可以作为职业生涯的快车道，同时获得经验和资格。",
                 work_reflection_prompt: "我的孩子心中有明确的职业规划吗？",
-                reflection_title: "反思与规划的时间",
-                reflection_subtitle: "用这些问题与您的孩子进行一次有意义的对话。",
-                q1_title: "1. 我孩子的优点和热情是什么？",
-                q1_op1_label: "学术与分析",
-                q1_op2_label: "创意与动手",
-                q1_op3_label: "实践与解决问题",
-                q1_op4_label: "社交与沟通",
-                q1_notes_label: "关于他们最喜欢的科目或爱好的笔记：",
-                q2_title: "2. 我的孩子如何学习效果最好？",
-                q2_op1_label: "在教室里，通过理论",
-                q2_op2_label: "通过实践和实际应用",
-                q2_op3_label: "在工作环境中",
-                q2_op4_label: "理论与实践相结合",
-                q3_title: "3. 他们的长期愿望是什么？",
-                q3_notes_label: "（如果他们还不知道也没关系！只是探索一下想法。）",
-                next_steps_title: "我们的下一步清单",
-                step1_text: "参观学院/预科学校的开放日。",
-                step2_text: "与学校的职业顾问交谈。",
-                step3_text: "在线研究具体的课程/学徒制。",
-                step4_text: "寻找本地的学徒制职位空缺。",
-                step5_text: "鼓励工作经验或志愿服务。",
+                reflect_header: "让我们反思：支持您孩子的下一步",
+                learning_style_question: "您孩子的学习方式是什么？",
+                learning_style_prompt: "💡 <strong>思考提示：</strong> 您的孩子天生如何学得最好——通过做事、阅读、讨论想法，还是观察他人？哪些学校科目或爱好能点燃他们的好奇心？",
+                label_learning_doing_parent: "实践型（动手做）",
+                label_learning_writing_parent: "学术型（阅读/写作）",
+                label_learning_talking_parent: "合作型（交谈）",
+                label_learning_watching_parent: "观察型（观看）",
+                label_learning_building_parent: "动手型（建造）",
+                aspirations_question: "您孩子的志向是什么？",
+                aspirations_prompt: "💡 <strong>思考提示：</strong> 除了学历，真正激励您孩子的是什么？什么样的工作会让他们感到满足，或者他们希望产生什么样的影响？",
+                label_goal_university_parent: "上大学",
+                label_goal_earn_money_parent: "边赚钱边学习",
+                label_goal_real_experience_parent: "获得真实世界经验",
+                label_goal_try_different_parent: "探索不同途径",
+                compare_decide_header: "一起讨论",
+                good_fit_question: "您认为哪一个（或哪些）现在最适合您的孩子？",
+                good_fit_prompt: "💡 <strong>思考提示：</strong> 这些途径中哪一个真正让您的孩子感到兴奋？哪一个与他们的优势相符，即使它们看起来有些挑战？",
+                learn_more_question: "哪些问题可以帮助我们对我们的选择更有信心？",
+                talk_through_learn_more_prompt: "💡 <strong>思考提示：</strong> 关于某个途径的哪些具体细节能让您和您的孩子在做决定时感到更安心？例如，关于升学、日常生活或支持系统？",
+                next_steps_header: "下一步您可以做什么",
+                parent_next_step_prompt: "这周我能做的一件小事来支持我孩子的旅程是什么？",
+                next_step_prompt_text: "💡 <strong>思考提示：</strong> 要开始，您可以采取哪一个实用、简单的步骤？也许帮助他们研究一个特定的学院，或者安排与他们好奇的职业中的某人进行对话？",
+                parent_questions_prompt: "哪些问题可以帮助我们对我们的选择更有信心？",
+                parent_questions_prompt_text: "💡 <strong>思考提示：</strong> 作为家长，您对这些选项有哪些财务、后勤或长期问题？您如何找到这些答案？",
+                parent_who_to_talk_prompt: "我们能向谁寻求建议（例如职业顾问、导师、朋友）？",
+                who_to_talk_prompt_text: "💡 <strong>思考提示：</strong> 在您孩子的生活中（或您自己的关系网中），谁能提供宝贵的见解或鼓励？考虑职业顾问、老师、家庭朋友或导师。",
                 other_pathways_title: "其他途径与支持",
                 other_pathways_text: "有些学生选择的路径未在主网格中显示，但可能同样有价值。例如，支持性实习和培训生计划为有教育、健康和护理（EHC）计划或有额外需求的年轻人提供结构化支持。这些计划包括在职培训，并重点关注培养独立性和就业能力。有些学生加入武装部队，将培训、资格和职业发展与服役相结合。入门级工作或特定行业的培训计划也可以帮助年轻人培养技能，并进入学徒制或继续深造。请与您的学校、学院或当地的职业服务机构交谈，了解有哪些可用的资源以及什么最能支持您孩子的目标。"
             },
@@ -1288,27 +1367,35 @@
                 work_reality_label: "Реальність:",
                 work_reality_text: "Може бути швидким шляхом до кар'єри, одночасно здобуваючи досвід та кваліфікацію.",
                 work_reflection_prompt: "Чи має моя дитина чіткий кар'єрний шлях на увазі?",
-                reflection_title: "Час для роздумів та планування",
-                reflection_subtitle: "Використовуйте ці питання для змістовної розмови з вашою дитиною.",
-                q1_title: "1. Які сильні сторони та захоплення моєї дитини?",
-                q1_op1_label: "Академічні та аналітичні",
-                q1_op2_label: "Творчі та практичні",
-                q1_op3_label: "Практичні та вирішення проблем",
-                q1_op4_label: "Соціальні та комунікативні",
-                q1_notes_label: "Нотатки про їхні улюблені предмети чи хобі:",
-                q2_title: "2. Як моя дитина найкраще навчається?",
-                q2_op1_label: "У класі, через теорію",
-                q2_op2_label: "Через практику та практичне застосування",
-                q2_op3_label: "У робочому середовищі",
-                q2_op4_label: "Поєднання теорії та практики",
-                q3_title: "3. Які їхні довгострокові прагнення?",
-                q3_notes_label: "(Це нормально, якщо вони ще не знають! Просто досліджуйте ідеї.)",
-                next_steps_title: "Наш контрольний список наступних кроків",
-                step1_text: "Відвідати дні відкритих дверей коледжів/шостих класів.",
-                step2_text: "Поговорити з кар'єрним консультантом у школі.",
-                step3_text: "Дослідити конкретні курси/стажування онлайн.",
-                step4_text: "Шукати місцеві вакансії для стажування.",
-                step5_text: "Заохочувати до отримання досвіду роботи або волонтерства.",
+                reflect_header: "Поміркуймо: Підтримка наступного кроку вашої дитини",
+                learning_style_question: "Який стиль навчання у вашої дитини?",
+                learning_style_prompt: "💡 <strong>Підказка для роздумів:</strong> Як ваша дитина найкраще навчається природним шляхом – роблячи щось, читаючи, обговорюючи ідеї чи спостерігаючи за іншими? Які шкільні предмети чи хобі розпалюють її цікавість?",
+                label_learning_doing_parent: "Практичний (роблячи)",
+                label_learning_writing_parent: "Академічний (читаючи/пишучи)",
+                label_learning_talking_parent: "Спільний (розмовляючи)",
+                label_learning_watching_parent: "Спостережливий (спостерігаючи)",
+                label_learning_building_parent: "Практичний (будуючи)",
+
+                aspirations_question: "Які прагнення у вашої дитини?",
+                aspirations_prompt: "💡 <strong>Підказка для роздумів:</strong> Окрім кваліфікацій, що насправді мотивує вашу дитину? Яка робота принесе їй задоволення, або який вплив вона сподівається мати?",
+                label_goal_university_parent: "Вступити до університету",
+                label_goal_earn_money_parent: "Заробляти гроші та навчатися",
+                label_goal_real_experience_parent: "Отримати реальний досвід",
+                label_goal_try_different_parent: "Досліджувати різні шляхи",
+
+                compare_decide_header: "Обговоріть це разом",
+                good_fit_question: "Який(і) варіант(и) здається(ються) гарним вибором для вашої дитини зараз?",
+                good_fit_prompt: "💡 <strong>Підказка для роздумів:</strong> Який з цих шляхів справді захоплює вашу дитину? Які з них відповідають її сильним сторонам, навіть якщо вони здаються трохи складними?",
+                learn_more_question: "Які питання допоможуть нам почуватися впевненіше у своєму виборі?",
+                talk_through_learn_more_prompt: "💡 <strong>Підказка для роздумів:</strong> Які конкретні деталі про шлях змусять вас і вашу дитину почуватися більш впевнено у рішенні? Наприклад, про прогрес, повсякденне життя або системи підтримки?",
+
+                next_steps_header: "Що ви можете зробити далі",
+                parent_next_step_prompt: "Що я можу зробити цього тижня, щоб підтримати шлях моєї дитини?",
+                next_step_prompt_text: "💡 <strong>Підказка для роздумів:</strong> Для початку, який практичний, легкий крок ви могли б зробити? Можливо, допомогти їм дослідити конкретний коледж або домовитися про розмову з кимось у кар'єрі, яка їх цікавить?",
+                parent_questions_prompt: "Які питання допоможуть нам почуватися впевненіше у своєму виборі?",
+                parent_questions_prompt_text: "💡 <strong>Підказка для роздумів:</strong> Як батьки, які фінансові, логістичні чи довгострокові питання у вас є щодо цих варіантів? Як ви можете знайти ці відповіді?",
+                parent_who_to_talk_prompt: "До кого ми можемо звернутися за порадою (наприклад, до кар'єрного консультанта, репетитора, друга)?",
+                who_to_talk_prompt_text: "💡 <strong>Підказка для роздумів:</strong> Хто в житті вашої дитини (або у вашій власній мережі) може запропонувати цінні ідеї чи заохочення? Подумайте про кар'єрних консультантів, вчителів, друзів сім'ї чи наставників.",
                 other_pathways_title: "Інші шляхи та підтримка",
                 other_pathways_text: "Деякі студенти обирають шляхи, не показані в основній сітці, які можуть бути настільки ж цінними. Наприклад, підтримувані стажування та тренінги пропонують структуровану підтримку для молодих людей з планами освіти, охорони здоров'я та догляду (EHC) або додатковими потребами. Вони включають навчання на робочому місці та сильну увагу до формування незалежності та працевлаштування. Деякі студенти вступають до Збройних Сил, де навчання, кваліфікації та кар'єрний розвиток поєднуються зі службою. Початкова робота або галузеві навчальні програми також можуть допомогти молодим людям розвинути навички та перейти до учнівства або подальшого навчання. Поговоріть зі своєю школою, коледжем або місцевою службою кар'єри, щоб дізнатися, що є в наявності та що найкраще підтримає цілі вашої дитини."
             },
@@ -1413,154 +1500,34 @@
                 work_reality_label: "حقیقت:",
                 work_reality_text: "ایک ہی وقت میں تجربہ اور قابلیت حاصل کرتے ہوئے، کیریئر کا تیز رفتار راستہ ہوسکتا ہے۔",
                 work_reflection_prompt: "کیا میرے بچے کے ذہن میں واضح کیریئر کا راستہ ہے؟",
-                reflection_title: "غور و فکر اور منصوبہ بندی کا وقت",
-                reflection_subtitle: "اپنے بچے کے ساتھ بامعنی گفتگو کرنے کے لئے ان سوالات کا استعمال کریں۔",
-                q1_title: "1. میرے بچے کی طاقتیں اور جذبے کیا ہیں؟",
-                q1_op1_label: "تعلیمی اور تجزیاتی",
-                q1_op2_label: "تخلیقی اور عملی",
-                q1_op3_label: "عملی اور مسئلہ حل کرنا",
-                q1_op4_label: "سماجی اور بات چیت کرنے والا",
-                q1_notes_label: "ان کے پسندیدہ مضامین یا مشاغل پر نوٹس:",
-                q2_title: "2. میرا بچہ بہترین طریقے سے کیسے سیکھتا ہے؟",
-                q2_op1_label: "کلاس روم میں، نظریہ کے ذریعے",
-                q2_op2_label: "کرنے اور عملی اطلاق کے ذریعے",
-                q2_op3_label: "کام کے ماحول میں",
-                q2_op4_label: "نظریہ اور عمل کا مرکب",
-                q3_title: "3. ان کی طویل مدتی خواہشات کیا ہیں؟",
-                q3_notes_label: "(اگر وہ ابھی تک نہیں جانتے تو ٹھیک ہے! صرف خیالات کی کھوج کریں۔)",
-                next_steps_title: "ہماری اگلی اقدامات کی چیک لسٹ",
-                step1_text: "کالج/چھٹی فارم کے اوپن ڈیز پر جائیں۔",
-                step2_text: "اسکول میں کیریئر ایڈوائزر سے بات کریں۔",
-                step3_text: "مخصوص کورسز/اپرنٹس شپس آن لائن تحقیق کریں۔",
-                step4_text: "مقامی اپرنٹس شپ کی خالی آسامیوں کو تلاش کریں۔",
-                step5_text: "کام کے تجربے یا رضاکارانہ خدمات کی حوصلہ افزائی کریں۔",
+                reflect_header: "آئیے غور کریں: اپنے بچے کے اگلے قدم کی حمایت کرنا",
+                learning_style_question: "آپ کے بچے کا سیکھنے کا انداز کیا ہے؟",
+                learning_style_prompt: "💡 <strong>سوچنے کا اشارہ:</strong> آپ کا بچہ قدرتی طور پر کیسے بہتر سیکھتا ہے - کام کرکے، پڑھ کر، خیالات پر تبادلہ خیال کرکے، یا دوسروں کو دیکھ کر؟ کون سے اسکول کے مضامین یا مشاغل ان کی تجسس کو روشن کرتے ہیں؟",
+                label_learning_doing_parent: "عملی (کرنا)",
+                label_learning_writing_parent: "تعلیمی (پڑھنا/لکھنا)",
+                label_learning_talking_parent: "باہمی (بات کرنا)",
+                label_learning_watching_parent: "مشاہداتی (دیکھنا)",
+                label_learning_building_parent: "عملی (تعمیر کرنا)",
+                aspirations_question: "آپ کے بچے کی خواہشات کیا ہیں؟",
+                aspirations_prompt: "💡 <strong>سوچنے کا اشارہ:</strong> قابلیتوں سے ہٹ کر، آپ کے بچے کو واقعی کیا چیز متحرک کرتی ہے؟ کس قسم کا کام انہیں تکمیل کا احساس دلائے گا، یا وہ کس قسم کا اثر ڈالنے کی امید کرتے ہیں؟",
+                label_goal_university_parent: "یونیورسٹی جانا",
+                label_goal_earn_money_parent: "پیسہ کمانا اور سیکھنا",
+                label_goal_real_experience_parent: "حقیقی دنیا کا تجربہ حاصل کرنا",
+                label_goal_try_different_parent: "مختلف راستے تلاش کرنا",
+                compare_decide_header: "مل کر بات کریں",
+                good_fit_question: "کون سا (کون سے) آپ کے بچے کے لئے ابھی مناسب لگتا ہے؟",
+                good_fit_prompt: "💡 <strong>سوچنے کا اشارہ:</strong> ان راستوں میں سے کون سا آپ کے بچے کو واقعی پرجوش کرتا ہے؟ کون سے ان کی طاقتوں کے مطابق ہیں، چاہے وہ تھوڑا مشکل لگیں؟",
+                learn_more_question: "کون سے سوالات ہمارے انتخاب میں ہمیں زیادہ پر اعتماد محسوس کرنے میں مدد کرسکتے ہیں؟",
+                talk_through_learn_more_prompt: "💡 <strong>سوچنے کا اشارہ:</strong> کسی راستے کے بارے میں کون سی مخصوص تفصیلات آپ اور آپ کے بچے کو فیصلے میں زیادہ محفوظ محسوس کرائیں گی؟ مثال کے طور پر، ترقی، روزمرہ کی زندگی، یا معاون نظام کے بارے میں؟",
+                next_steps_header: "آپ آگے کیا کرسکتے ہیں",
+                parent_next_step_prompt: "اس ہفتے میں اپنے بچے کے سفر کی حمایت کے لئے کیا چھوٹا کام کرسکتا ہوں؟",
+                next_step_prompt_text: "💡 <strong>سوچنے کا اشارہ:</strong> شروع کرنے کے لئے، آپ کونسا ایک عملی، آسان قدم اٹھا سکتے ہیں؟ شاید انہیں کسی مخصوص کالج کی تحقیق میں مدد دینا، یا کسی ایسے شخص کے ساتھ بات چیت کا اہتمام کرنا جس کے کیریئر میں انہیں دلچسپی ہو؟",
+                parent_questions_prompt: "کون سے سوالات ہمارے انتخاب میں ہمیں زیادہ پر اعتماد محسوس کرنے میں مدد کرسکتے ہیں؟",
+                parent_questions_prompt_text: "💡 <strong>سوچنے کا اشارہ:</strong> ایک والدین کے طور پر، ان اختیارات کے بارے میں آپ کے کیا مالی، لاجسٹک، یا طویل مدتی سوالات ہیں? آپ ان جوابات کو کیسے تلاش کرسکتے ہیں?",
+                parent_who_to_talk_prompt: "کیا کوئی ہے جس سے ہم مشورے کے لئے رجوع کرسکتے ہیں (مثلاً کیریئر ایڈوائزر، ٹیوٹر، دوست)؟",
+                who_to_talk_prompt_text: "💡 <strong>سوچنے کا اشارہ:</strong> آپ کے بچے کی زندگی میں (یا آپ کے اپنے نیٹ ورک میں) کون قیمتی بصیرت یا حوصلہ افزائی پیش کرسکتا ہے؟ کیریئر ایڈوائزرز، اساتذہ، خاندانی دوست، یا سرپرستوں کے بارے میں سوچیں۔",
                 other_pathways_title: "دیگر راستے اور معاونت",
                 other_pathways_text: "کچھ طلباء ایسے راستوں کا انتخاب کرتے ہیں جو مرکزی گرڈ پر نہیں دکھائے گئے ہیں جو اتنے ہی قیمتی ہوسکتے ہیں۔ مثال کے طور پر، سپورٹڈ انٹرن شپس اور ٹرینی شپس تعلیم، صحت اور دیکھ بھال (EHC) کے منصوبوں یا اضافی ضروریات والے نوجوانوں کے لیے منظم مدد فراہم کرتی ہیں۔ ان میں ملازمت کی تربیت اور آزادی اور روزگار کی صلاحیت پیدا کرنے پر بھرپور توجہ شامل ہے۔ کچھ طلباء مسلح افواج میں شامل ہوتے ہیں، جہاں تربیت، قابلیت اور کیریئر کی ترقی کو خدمات کے ساتھ ملایا جاتا ہے۔ انٹری لیول کا کام یا سیکٹر کے لیے مخصوص تربیتی پروگرام بھی نوجوانوں کو مہارتیں بنانے اور اپرنٹس شپ یا مزید تعلیم حاصل کرنے میں مدد دے سکتے ہیں۔ اپنے اسکول، کالج، یا مقامی کیریئر سروس سے بات کریں تاکہ یہ معلوم ہوسکے کہ کیا دستیاب ہے اور آپ کے بچے کے اہداف کی بہترین حمایت کیا کرے گا۔"
-            },
-            cy: {
-                doc_title: "Cefnogi Camau Nesaf Eich Plentyn: Opsiynau Ôl-16 ar ôl Blwyddyn 11",
-                main_title_part1: "Datgloi Eich Dyfodol:",
-                main_title_part2: "Llywio Llwybrau Ôl-16",
-                intro_text: "Gall helpu'ch plentyn i benderfynu ar ei lwybr ar ôl Blwyddyn 11 fod yn gam mawr. Mae'r canllaw hwn yn esbonio'r prif opsiynau a sut y gallwch gefnogi ei ddewisiadau.",
-                al_title: "Lefelau Safon Uwch (Lefelau A)",
-                al_description: "Cymwysterau academaidd traddodiadol, sy'n cael eu gwerthfawrogi'n fawr ar gyfer mynediad i'r brifysgol.",
-                al_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                al_what_label: "Beth ydyw:",
-                al_what_text: "Cwrs 2 flynedd yn astudio 3-4 pwnc o'ch dewis yn fanwl. Mae'r ffocws ar ddamcaniaeth a gwybodaeth academaidd.",
-                al_entry_label: "Gofynion Mynediad:",
-                al_entry_text: "Fel arfer, 5 TGAU neu fwy ar raddau 9-4 (A*-C), yn aml gyda gofynion gradd uwch (e.e., 6/B) yn y pynciau a ddewiswyd.",
-                al_assessment_label: "Asesu:",
-                al_assessment_text: "Yn bennaf drwy <strong>arholiadau terfynol</strong> ar ddiwedd y 2 flynedd, gyda rhai pynciau'n cynnwys elfen o waith cwrs.",
-                al_progression_label: "Dilyniant:",
-                al_progression_text: "Y prif lwybr i'r <strong>brifysgol</strong>. Hefyd yn cael ei barchu ar gyfer Prentisiaethau Uwch/Gradd a chyflogaeth uniongyrchol.",
-                al_stereotype_label: "Y Stereoteip:",
-                al_stereotype_text: "\"Dyma'r unig gymhwyster 'go iawn'\" / \"Dim ond ar gyfer mynd i'r brifysgol y mae'n dda.\"",
-                al_reality_label: "Y Gwirionedd:",
-                al_reality_text: "Mae'n meithrin sgiliau dadansoddol hanfodol ac yn agor llawer o ddrysau. Nid dyma'r *unig* lwybr i'r brifysgol.",
-                al_reflection_prompt: "A fyddai fy mhlentyn yn mwynhau'r her o astudio pynciau penodol yn fanwl?",
-                btec_title: "BTEC",
-                btec_description: "Cymwysterau galwedigaethol sy'n canolbwyntio ar sgiliau ymarferol a gwaith cwrs.",
-                btec_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                btec_what_label: "Beth ydyw:",
-                btec_what_text: "Dysgu cymhwysol wedi'i anelu at sector diwydiant penodol, e.e., Busnes, Iechyd a Gofal Cymdeithasol, neu TG.",
-                btec_entry_label: "Gofynion Mynediad:",
-                btec_entry_text: "Yn amrywio, ond fel arfer mae angen 4-5 TGAU ar raddau 9-4 (A*-C), gan gynnwys Saesneg a Mathemateg yn aml.",
-                btec_assessment_label: "Asesu:",
-                btec_assessment_text: "Yn bennaf drwy <strong>waith cwrs parhaus</strong>, aseiniadau ymarferol, a phrosiectau. Mae gan rai arholiadau allanol.",
-                btec_progression_label: "Dilyniant:",
-                btec_progression_text: "Llwybr rhagorol i'r <strong>brifysgol</strong> (mae dros 95% yn eu derbyn), Prentisiaethau Uwch, neu gyflogaeth uniongyrchol.",
-                btec_stereotype_label: "Y Stereoteip:",
-                btec_stereotype_text: "\"Mae'n opsiwn 'haws'\" / \"Ddim cystal â Lefelau A.\"",
-                btec_reality_label: "Y Gwirionedd:",
-                btec_reality_text: "Cymhwyster a barchir yn fawr sy'n datblygu sgiliau ymarferol y mae cyflogwyr a phrifysgolion yn eu gwerthfawrogi.",
-                btec_reflection_prompt: "A yw'n well gan fy mhlentyn ddysgu drwy wneud a gweithio ar brosiectau yn hytrach nag arholiadau?",
-                tl_title: "Lefelau T",
-                tl_description: "Cymhwyster newydd sy'n cyfuno astudio yn y dosbarth â lleoliad gwaith sylweddol.",
-                tl_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                tl_what_label: "Beth ydyw:",
-                tl_what_text: "Cwrs 2 flynedd sy'n cyfateb i 3 Lefel A. Mae tua 80% yn y coleg ac 20% (o leiaf 45 diwrnod) mewn lleoliad diwydiant perthnasol.",
-                tl_entry_label: "Gofynion Mynediad:",
-                tl_entry_text: "Fel arfer 5 TGAU ar raddau 9-4, gan gynnwys Saesneg a Mathemateg yn aml. Gall rhai gofyn am radd uwch mewn pynciau perthnasol.",
-                tl_assessment_label: "Asesu:",
-                tl_assessment_text: "Cymysgedd o arholiadau, gwaith cwrs, a gwerthusiad gan y cyflogwr o'r lleoliad diwydiant.",
-                tl_progression_label: "Dilyniant:",
-                tl_progression_text: "Yn ddelfrydol ar gyfer symud ymlaen i <strong>waith medrus</strong>, Prentisiaeth Uwch/Gradd, neu astudiaethau prifysgol.",
-                tl_stereotype_label: "Y Stereoteip:",
-                tl_stereotype_text: "\"Dim ond ar gyfer prentisiaethau y mae'n dda\" / \"Cymhwyster newydd heb ei brofi.\"",
-                tl_reality_label: "Y Gwirionedd:",
-                tl_reality_text: "Wedi'i ddatblygu gyda chyflogwyr i ddarparu'r sgiliau sydd eu hangen ar ddiwydiant. Mae'n cynnig profiad gwaith go iawn gwerthfawr.",
-                tl_reflection_prompt: "A fyddai'r cyfuniad o ddysgu yn y dosbarth a phrofiad gwaith go iawn yn gweddu i'm plentyn?",
-                ib_title: "Y Fagloriaeth Ryngwladol (IB)",
-                ib_description: "Rhaglen eang, heriol a gydnabyddir yn rhyngwladol.",
-                ib_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                ib_what_label: "Beth ydyw:",
-                ib_what_text: "Astudir chwe phwnc (rhai ar lefel uwch, rhai ar lefel safonol) ar draws ystod o ddisgyblaethau, ynghyd â 'rhaglen graidd'.",
-                ib_entry_label: "Gofynion Mynediad:",
-                ib_entry_text: "Fel arfer, gofynion TGAU uchel iawn, yn aml 5 neu fwy o raddau 9-6 (A*-B), gan gynnwys Saesneg a Mathemateg.",
-                ib_assessment_label: "Asesu:",
-                ib_assessment_text: "Cymysgedd o arholiadau terfynol a gwaith cwrs sylweddol, gan gynnwys traethawd estynedig.",
-                ib_progression_label: "Dilyniant:",
-                ib_progression_text: "Llwybr a barchir yn fawr i <strong>brifysgolion gorau'r DU a ledled y byd</strong>.",
-                ib_stereotype_label: "Y Stereoteip:",
-                ib_stereotype_text: "\"Dim ond ar gyfer y rhai mwyaf galluog\" / \"Mae'n ormod o waith.\"",
-                ib_reality_label: "Y Gwirionedd:",
-                ib_reality_text: "Mae'n heriol, ond mae'n datblygu sgiliau rheoli amser, ymchwil annibynnol, ac ehangder gwybodaeth rhagorol.",
-                ib_reflection_prompt: "A yw fy mhlentyn yn unigolyn cyflawn sy'n ffynnu ar her academaidd eang?",
-                app_title: "Prentisiaethau",
-                app_description: "Ennill cyflog, cael profiad gwaith, a chael cymhwyster ar yr un pryd.",
-                app_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                app_what_label: "Beth ydyw:",
-                app_what_text: "Swydd go iawn gyda hyfforddiant strwythuredig. Mae o leiaf 20% o'r amser yn cael ei dreulio ar ddysgu y tu allan i'r gweithle, yn aml mewn coleg.",
-                app_entry_label: "Gofynion Mynediad:",
-                app_entry_text: "Yn amrywio'n fawr yn ôl y lefel (Canolradd, Uwch, Uwch, Gradd). Gall rhai fod angen TGAU penodol, tra bod eraill yn canolbwyntio ar botensial.",
-                app_assessment_label: "Asesu:",
-                app_assessment_text: "Asesiad parhaus yn y gweithle, tystiolaeth portffolio, a phrawf ymarferol terfynol (Asesiad Pwynt Terfyn).",
-                app_progression_label: "Dilyniant:",
-                app_progression_text: "Gyrfa amser llawn, dyrchafiad, neu symud ymlaen i <strong>brentisiaeth lefel uwch</strong> (hyd at lefel gradd a Meistr).",
-                app_stereotype_label: "Y Stereoteip:",
-                app_stereotype_text: "\"Cyflog isel\" / \"Dim ond ar gyfer crefftau llaw y mae'n dda.\"",
-                app_reality_label: "Y Gwirionedd:",
-                app_reality_text: "Ar gael mewn dros 1500 o rolau, o'r gyfraith a pheirianneg i farchnata digidol. Mae cyflogau'n cynyddu'n sylweddol gyda phrofiad a lefel.",
-                app_reflection_prompt: "A yw fy mhlentyn yn awyddus i ddechrau gweithio, ennill arian, a dysgu mewn ffordd ymarferol?",
-                work_title: "Gwaith gyda Hyfforddiant",
-                work_description: "Dechrau gyrfa gyda chymwysterau a gydnabyddir gan y diwydiant.",
-                work_key_info_header: "Gwybodaeth Allweddol a Gwirioneddau:",
-                work_what_label: "Beth ydyw:",
-                work_what_text: "Swydd lefel mynediad sy'n cynnwys rhaglen hyfforddi ffurfiol, strwythuredig i ddatblygu sgiliau penodol ar gyfer y swydd.",
-                work_entry_label: "Gofynion Mynediad:",
-                work_entry_text: "Yn dibynnu'n llwyr ar y cyflogwr a'r rôl. Yn aml, mae brwdfrydedd ac agwedd 'gallu gwneud' yr un mor bwysig â chymwysterau.",
-                work_assessment_label: "Asesu:",
-                work_assessment_text: "Yn seiliedig ar berfformiad yn y gweithle, cwblhau'r hyfforddiant, ac o bosibl ennill cymwysterau proffesiynol.",
-                work_progression_label: "Dilyniant:",
-                work_progression_text: "Dilyniant o fewn y cwmni, symud ymlaen i rolau mwy arbenigol, neu ddefnyddio'r profiad i wneud cais am brentisiaeth uwch.",
-                work_stereotype_label: "Y Stereoteip:",
-                work_stereotype_text: "\"Swydd heb ddyfodol\" / \"Dim ond gwaith heb sgiliau ydyw.\"",
-                work_reality_label: "Y Gwirionedd:",
-                work_reality_text: "Gall fod yn gam cyntaf rhagorol ar ysgol gyrfa, gan ddarparu profiad a hyfforddiant gwerthfawr heb y pwysau academaidd.",
-                work_reflection_prompt: "A oes gan fy mhlentyn lwybr gyrfa clir mewn golwg ac a fyddai'n elwa o brofiad uniongyrchol?",
-                reflection_title: "Amser i Fyfyrio a Chynllunio",
-                reflection_subtitle: "Defnyddiwch y cwestiynau hyn i sbarduno sgyrsiau ystyrlon gyda'ch plentyn.",
-                q1_title: "1. Beth yw cryfderau a diddordebau fy mhlentyn?",
-                q1_op1_label: "Academaidd a Dadansoddol",
-                q1_op2_label: "Creadigol ac Ymarferol",
-                q1_op3_label: "Ymarferol a Datrys Problemau",
-                q1_op4_label: "Cymdeithasol a Chyfathrebol",
-                q1_notes_label: "Nodiadau ar eu hoff bynciau ysgol neu hobïau y tu allan i'r ysgol:",
-                q2_title: "2. Sut mae fy mhlentyn yn dysgu orau?",
-                q2_op1_label: "Mewn ystafell ddosbarth, drwy theori a thrafodaeth",
-                q2_op2_label: "Drwy wneud, arbrofi, a chymhwyso ymarferol",
-                q2_op3_label: "Mewn amgylchedd gwaith go iawn",
-                q2_op4_label: "Gyda chymysgedd o theori ac ymarfer",
-                q3_title: "3. Beth yw eu huchelgeisiau ar gyfer y dyfodol?",
-                q3_notes_label: "(Mae'n iawn os nad ydyn nhw'n gwybod eto! Archwiliwch syniadau a phosibiliadau.)",
-                next_steps_title: "Ein Rhestr Wirio Camau Nesaf",
-                step1_text: "Ymweld â diwrnodau agored colegau a chweched dosbarth.",
-                step2_text: "Siarad ag athrawon a chynghorydd gyrfaoedd yr ysgol.",
-                step3_text: "Ymchwilio i gyrsiau a phrentisiaethau penodol ar-lein.",
-                step4_text: "Chwilio am swyddi prentisiaeth gwag ar wefannau'r llywodraeth a chyflogwyr.",
-                step5_text: "Annog profiad gwaith neu wirfoddoli perthnasol.",
-                other_pathways_title: "Llwybrau a Chymorth Eraill",
-                other_pathways_text: "Mae llwybrau gwerthfawr eraill ar gael. Mae <strong>Interniaethau â Chymorth</strong> a <strong>Hyfforddeiaethau</strong> yn darparu cymorth wedi'i deilwra ar gyfer pobl ifanc ag anghenion dysgu ychwanegol neu Gynlluniau Addysg, Iechyd a Gofal (ADG), gan ganolbwyntio ar sgiliau gwaith a byw'n annibynnol. Mae rhai'n ymuno â'r <strong>lluoedd arfog</strong>, sy'n cynnig hyfforddiant, cymwysterau, a gyrfa strwythuredig. Gall rhaglenni hyfforddi sector-benodol neu waith lefel mynediad hefyd fod yn gamau cyntaf rhagorol. Cysylltwch â gwasanaeth gyrfaoedd eich ysgol neu goleg i archwilio'r holl opsiynau sydd ar gael i gefnogi uchelgeisiau eich plentyn."
             }
         };
 
@@ -1602,27 +1569,11 @@
             changeLanguage(); // Set initial language
             
             languageSelect.addEventListener('change', changeLanguage);
-
-            // Automated test to cycle through languages and check for errors
-            console.log('--- Running Language Switch Test ---');
-            const languagesToTest = ['en', 'bn', 'zh', 'uk', 'ur', 'ar', 'cy'];
-            languagesToTest.forEach(lang => {
-                languageSelect.value = lang;
-                changeLanguage();
-                const titleElement = document.getElementById('main_title_part1');
-                const title = titleElement ? titleElement.innerText : 'N/A';
-                console.log(`Switched to ${lang}. Main title: ${title}`);
-            });
-            console.log('--- Language Switch Test Complete ---');
-
-            // Restore saved language after test
-            languageSelect.value = savedLang;
-            changeLanguage();
         });
     </script>
     
     <footer class="text-center text-xs text-gray-500 mt-8">
-  © 2025 Futures Unlocked | Developed by S.N.Hekim
+  © 2025 Futures Unlocked | Developed by N.Hekim
 </footer>
 
 </body>
